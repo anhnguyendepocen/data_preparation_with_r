@@ -1,0 +1,9 @@
+# Confidentiality
+
+Protecting individual responses.
+
+## Statistical disclosure control (SDC)
+
+
+
+

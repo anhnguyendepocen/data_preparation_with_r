@@ -1,0 +1,17 @@
+# Introduction {#intro}
+
+
+The data science process:
+
+
+## Import
+
+Most data science and statistics text books use example data sets that are nicely formatted, easy to load, and are often designed to produce the statistical results that are being taught (Anscombe's Quartet is a famous example).
+
+But in real life, the data we use is entirely different from this. We might be designing our own collection. We might be receiving data from multiple sources, so we end up with two files that have what appears to be the same value coded in different ways (for example, my home province in Canada can be represented as "British Columbia", "B.C.", or "BC"). Data might be provided in different formats–spreadsheets, databases, software-specific file formats, websites, and PDF files.
+
+
+
+
+
+

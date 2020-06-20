@@ -1,0 +1,18 @@
+--- 
+title: "Data Preparation: Essential Steps Before Analysis"
+author: "Martin Monkman"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+#github-repo: rstudio/bookdown-demo
+description: "Before you can analyze your data, you need to ensure that it is clean and tidy."
+---
+
+# Preface
+
+
+
