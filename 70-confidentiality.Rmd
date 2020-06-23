@@ -6,14 +6,14 @@
 
 ## Introduction
 
-The confidentiality of many data that are ripe for analysis are covered under some form of legal, ethical, and moral constraints. How do we as researchers ensure that the data we work with--whether it's in aggregated form or released as a micro (individual) record that is stripped of personal identifiers such as name--remains anonymous, thereby ensuring that any personal information remains private?
+The confidentiality of many data that are ripe for analysis are covered under some form of legal, ethical, and moral constraints. How do we as researchers ensure that the data we work with—whether it's in aggregated form or released as a micro (individual) record that is stripped of personal identifiers such as name—remains anonymous, thereby ensuring that any personal information remains private?
 
-Many of the practical applications of statistical disclosure control can be traced back to the work of various statistical agencies around the world, who are confronted with the challenge of balancing increased expectations for openness and transparency (which translates into an increasing demand for the release of data) with "an increasing public consciousness about the privacy of individuals" (Bethlehem, 2009, p.342). 
+Many of the practical applications of statistical disclosure control can be traced back to the work of various statistical agencies around the world, who are confronted with the challenge of balancing increased expectations for openness and transparency (which translates into an increasing demand for the release of data) with "an increasing public consciousness about the privacy of individuals" ([@Bethlehem_2009], p.342). 
 
 > Statistical Disclosure Control (SDC) or Statistical Disclosure
 Limitation (SDL) seeks to protect statistical data in such a way that they can be
 released without giving away confidential information that can be linked to specific
-individuals or entities. (Hundepool et al., 2012, p.1)
+individuals or entities. ([@Hundepool_etal_2012] p.1)
 
 Because statistical agencies have this role and take the responsibility very seriously (their reputations rest heavily on the willingness of individuals, businesses, and other public agencies to provide data to them) means much of the material on the topic comes directly or indirectly from those agencies (see, for example, the Australian National Statistical Service and Statistics Canada publications listed below).
 
@@ -69,9 +69,9 @@ Arvind Narayanan and Vitaly Shmatikov, 2008: ["Robust De-anonymization of Large 
 * see also Arvind Narayanan, ["Big Data: Anonymity, Privacy, Ethics"](http://randomwalker.info/data-privacy/), a collection of papers and other resources on the topic 
 
 
-Latanya Sweeney, "Information Explosion" in _Confidentiality, Disclosure, and Data Access: Theory and Practical Applications for Statistical Agencies_ (@Sweeney_2001)
+Latanya Sweeney, "Information Explosion" in _Confidentiality, Disclosure, and Data Access: Theory and Practical Applications for Statistical Agencies_ [@Sweeney_2001]
 
-Latanya Sweeney, Michael von Loewenfeldt, and Melissa Perry, "Saying it’s Anonymous Doesn't Make It So: Re-identifications of “anonymized” law school data" in _Journal of Technology Science_ (@Sweeney_etal_2018)
+Latanya Sweeney, Michael von Loewenfeldt, and Melissa Perry, "Saying it’s Anonymous Doesn't Make It So: Re-identifications of “anonymized” law school data" in _Journal of Technology Science_ [@Sweeney_etal_2018]
 
 * additional publications on the topic of data anonymization and re-identification by Latanya Sweeney can be found as part of her CV at [latanyasweeney.org](http://latanyasweeney.org/cv.html#publications)
 
@@ -136,7 +136,7 @@ Information and Privacy Commissioner of Ontario, June 2016, [_De-identification 
 Simson L. Garfinkel, October 2015, [_De-Identification of Personal Information_](http://nvlpubs.nist.gov/nistpubs/ir/2015/NIST.IR.8053.pdf), NISTIR 8053, National Institute of Standards and Technology.
 
 
-Jelke Bethlehem, 2009: [_Applied Survey Methods: A Statistical Perspective_](http://ca.wiley.com/WileyCDA/WileyTitle/productCd-0470373083.html), Wiley (Wiley Series in Survey Methodology)
+Jelke Bethlehem, 2009: [_Applied Survey Methods: A Statistical Perspective_](http://ca.wiley.com/WileyCDA/WileyTitle/productCd-0470373083.html), Wiley (Wiley Series in Survey Methodology) [@Bethlehem_2009]
 
 * The 13th and final chapter of this comprehensive outline of survey research methods is titled "Statistical Disclosure Control". While the book focusses on data collected through sample surveys, the principles apply equally to census surveys and administrative records.
 
@@ -146,7 +146,7 @@ Children’s Hospital of Eastern Ontario Research Institute, 2007: [Pan-Canadian
 
 Josep Domingo-Ferrer, 2014, ["Data Anonymization: A Tutorial"](http://www.hamilton.ie/privacy2014/josep.pdf)
 
-Anco Hundepool, Josep Domingo-Ferrer, Luisa Franconi, Sarah Giessing, Eric Schulte Nordholt, Keith Spicer, Peter-Paul de Wolf, 2012: [_Statistical Disclosure Control_](http://ca.wiley.com/WileyCDA/WileyTitle/productCd-1119978157.html), Wiley (Wiley Series in Survey Methodology)
+Anco Hundepool, Josep Domingo-Ferrer, Luisa Franconi, Sarah Giessing, Eric Schulte Nordholt, Keith Spicer, Peter-Paul de Wolf, 2012: [_Statistical Disclosure Control_](http://ca.wiley.com/WileyCDA/WileyTitle/productCd-1119978157.html), Wiley (Wiley Series in Survey Methodology) [@Hundepool_etal_2012]
 
 * Essentially a handbook of methods to ensure the privacy of individuals, it covers both microdata (individual records) and tabular data, recognizing the inherent differences in the risks associated with each.
 
