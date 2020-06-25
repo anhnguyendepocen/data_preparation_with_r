@@ -65,6 +65,9 @@ Gregory J. Matthews, Pétala Gardênia da Silva Estrela Tuy, and Robert K. Arthu
 "An examination of statistical disclosure issues related to publication of aggregate statistics in the presence of a known subset of the dataset using Baseball Hall of Fame ballots" [@Matthews_etal_2017]
 
 
+Li, Xiao-Bai and Qin, Jialun, "Anonymizing and Sharing Medical Text Records" [@doi:10.1287/isre.2016.0676]
+
+
 https://www.oreilly.com/library/view/anonymizing-health-data/9781449363062/ch01.html
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6658290/
