@@ -13,9 +13,9 @@ Many of the practical applications of statistical disclosure control can be trac
 > Statistical Disclosure Control (SDC) or Statistical Disclosure
 Limitation (SDL) seeks to protect statistical data in such a way that they can be
 released without giving away confidential information that can be linked to specific
-individuals or entities. ([@Hundepool_etal_2012] p.1)
+individuals or entities. ([@Hundepool_etal_2012], p.1)
 
-Because statistical agencies have this role and take the responsibility very seriously (their reputations rest heavily on the willingness of individuals, businesses, and other public agencies to provide data to them) means much of the material on the topic comes directly or indirectly from those agencies (see, for example, the Australian National Statistical Service and Statistics Canada publications listed below).
+Because statistical agencies have this role and take the responsibility very seriously (their reputations rest heavily on the willingness of individuals, businesses, and other public agencies to provide data to them) means much of the material on the topic comes directly or indirectly from those agencies (see, for example, the Australian National Statistical Service and Statistics Canada publications discussed below).
 
 A related topic is data masking, "the process of hiding original data with random characters or data." 
 
@@ -23,15 +23,18 @@ A related topic is data masking, "the process of hiding original data with rando
 [Data masking page at Wikipedia](https://en.wikipedia.org/wiki/Data_masking)
 
 
-***
-
-**Sidebar: The Mosaic Effect**
+### Sidebar: The Mosaic Effect
 
 Often bandied about is the term "the mosaic effect". A good definition comes from Vivek Kundra, who at the time was the U.S. Government's Chief Information Officer:
 
-> Individual pieces of data when released independently may not reveal sensitive information but when combined, this “mosaic effect” could be used to derive personal information or information vital to national security. (["Testimony Resolving the Shroud of Secrecy", 2010-03-23](https://www.cio.gov/2010/03/23/vivek-kundra-testimony-resolving-the-shroud-of-secrecy/))
+> Individual pieces of data when released independently may not reveal sensitive information but when combined, this “mosaic effect” could be used to derive personal information or information vital to national security. [@Kundra_2010]
 
-Further reading: ["Sorry, your data can still be identified even if it’s anonymized"](https://www.fastcompany.com/90278465/sorry-your-data-can-still-be-identified-even-its-anonymized) 
+
+
+**Further reading:** 
+
+* "Sorry, your data can still be identified even if it’s anonymized" [@CampbellDollaghan_2018]
+
 
 Aggregation, masking, and other SDC methods should reduce (if not entirely eliminate) a "mosaic effect". More research into this topic is required.
 
@@ -40,24 +43,34 @@ Aggregation, masking, and other SDC methods should reduce (if not entirely elimi
 
 ## Laws, Ethics, and Morals
 
-The Canadian [Panel on Research Ethics](http://www.pre.ethics.gc.ca/eng/index/) had created a policy document that includes a chapter on [Privacy and Confidentiality](http://www.pre.ethics.gc.ca/eng/policy-politique/initiatives/tcps2-eptc2/chapter5-chapitre5/), covering the full range of concerns about the use of individual data.
+The Canadian Panel on Research Ethics had created a policy document that includes a chapter on Privacy and Confidentiality [@Panel_on_Research_Ethics_TCPS2_2018], covering the full range of concerns about the use of individual data.
 
 
 ## Discussion
 
 [Wikipedia: Data anonymization](https://en.wikipedia.org/wiki/Data_anonymization)
 
-Some definitions: ["What is the difference between "de-identified", "anonymous", and "coded" data?"](https://kb.wisc.edu/hsirbs/page.php?id=25351)
 
-Justin Brickell and Vitaly Shmatikov, 2008: ["The Cost of Privacy: Destruction of Data-Mining Utility in Anonymized Data Publishing"](http://www.cs.cornell.edu/~shmat/shmat_kdd08.pdf)
+**Further Reading:**
 
-* see also [Wikipedia: De-anonymization](https://en.wikipedia.org/wiki/De-anonymization)
+* "What is the difference between the terms coded, de-identified, and anonymous?" [@OS_Office_of_Research]
+
+* Justin Brickell and Vitaly Shmatikov, "The Cost of Privacy: Destruction of Data-Mining Utility in Anonymized Data Publishing"[@Brickell_Shmatikov_2008]
+
+* [Wikipedia: De-anonymization](https://en.wikipedia.org/wiki/De-anonymization)
 
 
-Dary Hsu, ["Techniques to Anonymize Human Data"](http://blog.datasift.com/2015/04/09/techniques-to-anonymize-human-data/), 2015
 
 Gregory J. Matthews, Pétala Gardênia da Silva Estrela Tuy, and Robert K. Arthur, 
-["An examination of statistical disclosure issues related to publication of aggregate statistics in the presence of a known subset of the dataset using Baseball Hall of Fame ballots"](https://www.degruyter.com/view/j/jqas.2017.13.issue-1/jqas-2016-0085/jqas-2016-0085.xml), _Journal of Quantitative Analysis in Sports_, 2017
+"An examination of statistical disclosure issues related to publication of aggregate statistics in the presence of a known subset of the dataset using Baseball Hall of Fame ballots" [@Matthews_etal_2017]
+
+
+https://www.oreilly.com/library/view/anonymizing-health-data/9781449363062/ch01.html
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6658290/
+
+https://www.educause.edu/focus-areas-and-initiatives/policy-and-security/cybersecurity-program/resources/information-security-guide/toolkits/guidelines-for-data-deidentification-or-anonymization
+
 
 
 Arvind Narayanan and Vitaly Shmatikov, 2008: ["Robust De-anonymization of Large Datasets (How to Break Anonymity of the Netflix Prize Dataset)"](https://arxiv.org/pdf/cs/0610105.pdf)
