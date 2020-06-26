@@ -68,6 +68,12 @@ Gregory J. Matthews, Pétala Gardênia da Silva Estrela Tuy, and Robert K. Arthu
 Li, Xiao-Bai and Qin, Jialun, "Anonymizing and Sharing Medical Text Records" [@doi:10.1287/isre.2016.0676]
 
 
+Khaled El Emam and Luk Arbuckle, _Anonymizing Health Data_ [@ElEmam_Arbuckle_2013] -- a variety of case studies
+
+
+
+
+
 https://www.oreilly.com/library/view/anonymizing-health-data/9781449363062/ch01.html
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6658290/
