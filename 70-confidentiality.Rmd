@@ -1,3 +1,7 @@
+---
+output:
+  html_document: default
+---
 # Anonymity and Confidentiality
 **_Or,_ Statistical Disclosure Control, Masking, and De-Identification**
 

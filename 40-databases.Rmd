@@ -1,3 +1,7 @@
 # Relational Databases
 
-We have finished a nice book.
+
+
+"Databases using R" [@RStudio_databases]
+
+

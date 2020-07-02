@@ -8,7 +8,7 @@ The typical data science process has been described in this model [@Wickham_Grol
 
 Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce the statistical results that are demonstrated. Other data sets might be chosen for their statistical properties, or compiled as a summary example. 
 
-But in real life, the data we find is often entirely different from this.
+But in real life, the data we have to work with is, more often than not, entirely different from this.
 
 * The data we need might not exist yet, so we have to design our own data collection process.
 
@@ -20,7 +20,9 @@ But in real life, the data we find is often entirely different from this.
 
 * It might have bias.
 
-Thankfully, there are ways to ensure that you can assemble your data in a way that allows you to undertake the rest of the data science process. Much of what is required in these steps can be programmed in R, so that your efforts are reproducible. (For more about what is meant by "reproducibility", see  [@Gandrud_2015] and [@Smith_reproducible_2017].)
+* It might contain sensitive information, and our sharing of the data, including the publication of reports, needs to protect the individual records of the people or businesses that provided the information. For example, you might be working with health records or tax records. Any disclosure of an individual record might be considered a privacy breach...so you have to take great care to ensure that what you've published doesn't violate any legal, ethical, or moral frameworks.
+
+This book will introduce steps to ensure that you can assemble your data in a way that allows you to undertake the rest of the data science process, including making data and analysis available for a wider audience. Much of what is required in these steps can be programmed in R, so that your efforts are reproducible. (For more about what is meant by "reproducibility", see  [@Gandrud_2015] and [@Smith_reproducible_2017].)
 
 
 
@@ -30,8 +32,34 @@ This book is divided into major sections, each with chapters that delve into str
 
 ### Acquiring data
 
+[Collecting data]: designing your own original data collection
+
+Importing data from different file formats
+
+[Webscraping]: pulling data from websites
 
 
+### Transforming data
+
+[Cleaning data]
+
+* Missing values
+
+Data validation
+
+### Storing data
+
+Data documentation
+
+Data transformation: structure
+
+Data transformation: manipulation
+
+### Sharing data
+
+[Anonymity and Confidentiality]
+
+File formats
 
 
 

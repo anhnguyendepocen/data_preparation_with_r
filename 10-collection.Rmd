@@ -1,3 +1,50 @@
 # Collecting data
 
-Here is a review of existing methods.
+Before we can start analyzing data—before we get to the "Import" step—we need to collect it. And we also need to thing about what data we want to collect. But first:
+
+> Here are four different things that are closely related to each other:
+>
+> **__A theoretical construct__**. This is the thing that you’re trying to take a measurement of, like “age”, “gender” or an “opinion”. A theoretical construct can’t be directly observed, and often they’re actually a bit vague.
+>
+>**__A measure__**. The measure refers to the method or the tool that you use to make your observations. A question in a survey, a behavioural observation or a brain scan could all count as a measure.
+>
+>**__An operationalisation__**. The term “operationalisation” refers to the logical connection between the measure and the theoretical construct, or to the process by which we try to derive a measure from a theoretical construct.
+>
+>**__A variable__**. Finally, a new term. A variable is what we end up with when we apply our measure to something in the world. That is, variables are the actual “data” that we end up with in our data sets.
+
+[@Navarro_learning_2019, pp.13–14]
+
+Here's an example. A company wants to understand its workforce, because there's a vague idea that a large number of the staff are thinking about retirement in the next couple of years. The human resource (HR) department might be thinking about implementing knowledge transfer training, or some sort of incentive to encourage people to stay (or leave...), or to accelerate hiring to offset the increase in departures. So the HR department has asked you, the data analyst, for an analysis of the demographics of the company. 
+
+We know that _age_ is going to be a _theoretical construct_ we want to measure. In Canada you can start collecting your [Canada Pension Plan (CPP)](https://www.canada.ca/en/services/benefits/publicpensions/cpp.html) at age 60, so part of our analysis might be to find the proportion of staff who are either already 60 or older, or are within three years of that age.
+
+A _measure_ we have available is in the human resource database: each staff member's date of birth. This is collected when people are hired, and is required for various purposes, including tax accounting.
+
+But your date of birth is not your age. To find your age, we have to calculate the difference between that date and today. So to _operationalize_ the measure we have, we might need an **R** equation, using the functions in the package {lubridate}, that looks like this:
+
+`age_this_year <- ymd(19731022) %--% today() %/% years(1)` ^[The birthdate of [Ichiro Suzuki](https://en.wikipedia.org/wiki/Ichiro_Suzuki).] ^[For more information, see Clay Ford, ["Working with dates and time in R using the lubridate package"](https://data.library.virginia.edu/working-with-dates-and-time-in-r-using-the-lubridate-package/)
+[@Ford_lubridate_2017].]
+
+
+
+***
+
+And "collecting data" can mean a lot of different things. It could refer to:
+
+* Running trials or experiments in a controlled laboratory setting.
+
+* Making observations and recording the results of those observations (for example, as an astronomer or biologist might).
+
+* Sampling the people in an area and asking them a series of questions.
+
+* Collecting information as part of a business operation. A familiar example are supermarket checkout scanners which data about grocery purchases, which facilitate operation management of the store by tracking sales and inventory, and generating orders.
+
+* Downloading data from a website, where the downloaded table has data that has already been compiled and summarized from a larger data set. An example would be Statistics Canada's Census data tables.
+
+And it's important to note that your analysis project might require more than one of these methods of data collection.
+
+How you collect the data you need will depend on many factors, including what is already available, what your budget is (some data collection methods will cost a lot more than others), and the legal and regulatory environment (for example, the definition of "personal information" varies from one jurisdiction to the next.
+
+
+
+

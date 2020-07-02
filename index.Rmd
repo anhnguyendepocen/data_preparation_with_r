@@ -1,5 +1,6 @@
 --- 
-title: "Data Preparation: Essential Steps Before Analysis"
+title: "Finding Your Way Through Data Preparation"
+subtitle: "Essential Steps Before & After Analysis"
 author: "Martin Monkman"
 date: "`r Sys.Date()`"
 #site: bookdown::bookdown_site
@@ -21,7 +22,9 @@ description: "Before you can analyze your data, you need to ensure that it is cl
 
 _Draft_
 
+It is routinely noted that the [Pareto principle](https://en.wikipedia.org/wiki/Pareto_principle) applies to data science—80% of one's time is spent on data collection and preparation, and the remaining 20% on the "fun stuff" like modeling, data visualization, and communication.
 
+There is no shortage of material—text books, journal articles, blog posts, online courses, podcasts, etc.— about the 20%. This modest book hopes to serve as an introduction and wayfinder for readers seeking to understand core elements of the other 80%.
 
 
 
@@ -39,7 +42,7 @@ The author would like to acknowledge everyone who has contributed to the books, 
 
 **Source code**
 
-The source code for this ebook can be found at this github repository: https://github.com/MonkmanMH/DataScienceResources 
+The source code for this ebook can be found at this github repository: https://github.com/MonkmanMH/here_be_dragons 
 
 This book is written in **Markdown**, using the [**bookdown**] package [@R-bookdown], and published to the web at [bookdown.org](https://bookdown.org/).
 
@@ -55,7 +58,7 @@ install.packages("bookdown")
 
 **Cover image**
 
-The cover image is [Fisgard Lighthouse](https://www.pc.gc.ca/en/lhn-nhs/bc/fortroddhill), marking the entrance to Esquimalt Harbour in Victoria, British Columbia, Canada. 
+The cover image is a wayfinder close to my home: [Fisgard Lighthouse](https://www.pc.gc.ca/en/lhn-nhs/bc/fortroddhill), marking the entrance to Esquimalt Harbour in Victoria, British Columbia, Canada. (Location: https://www.openstreetmap.org/#map=16/48.4307/-123.4477)
 
 The photo was taken by Jeff Hitchcock, and was downloaded from [flickr.com](https://www.flickr.com/photos/arbron/20478450629/in/photolist-xcBpUZ-2MEe8A-Tz6rTx-HRYy1o-tbHGK-2MA1SH-5n9vch-qoZ867-LPwdP-dNjGwg-zPLnpm-rme8mp-xcuUG1-3AG9T-8wntna-nR6mVu-nyEL8U-nP7ABE-2j5vV5P-MoZMrU-5MUXTU-ed575f-Piv3Nk-exCURH-Lizw85-o6mGzN-KVE2Ti-aAo4y-aAo76-52UkBm-dFdY6L-8vJ9F9-UPKWuH-9qLxh-5MQHAr-8vF5hM-8vHYom-8ag7N5-5MUXJj-5MQHjB-5MUWGy-5MQHdD-5MQH4t-5MQHiz-wxeSgT-5MUXgC-5MQHm2-8vF2v4-5MQHo8-btdtzu); that site notes that the image is licensed under the [Creative Commons license Attribution 2.0 Generic (CC BY 2.0)](https://creativecommons.org/licenses/by/2.0/).
 
