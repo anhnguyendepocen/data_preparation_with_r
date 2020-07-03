@@ -7,6 +7,18 @@
 
 ## SQL
 
+### First: how do you say "SQL"?
+
+The backstory is that in the 1970s, IBM came out with "SEQUEL", which stood for "Structured English QUEry Language". So it was pronounced [ ˈsiːkwəl ].
+
+But "SEQUEL" was already trademarked, so IBM shortened it to the TLA ^[Three Letter Abbreviation] "SQL", and the pronunciation remained. However, some folks say the names of the letters—[ ˈɛs kjuː ˈɛl ]
+
+Either way, somebody is going to tell that you're saying it wrong. [@Thanh_2018]
+
+
+
+
+
 [@Malik_Goldwasser_Johnston_2019]
 
 [@Malik_Goldwasser_Johnston_2020]
