@@ -5,3 +5,17 @@
 "Databases using R" [@RStudio_databases]
 
 
+## SQL
+
+[@Malik_Goldwasser_Johnston_2019]
+
+[@Malik_Goldwasser_Johnston_2020]
+
+
+[@Nield_2016]
+
+[@Viescas_2018]
+
+[@Tale_2016]
+
+

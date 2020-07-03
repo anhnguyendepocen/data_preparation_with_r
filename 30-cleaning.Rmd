@@ -2,6 +2,11 @@
 
 Some _significant_ applications are demonstrated in this chapter.
 
-## Example one
 
-## Example two
+## Data cleaning with R
+
+[@Van_der_Loo_de_Jonge_2018]
+
+[@Buttrey_Whitaker_2017]
+
+
