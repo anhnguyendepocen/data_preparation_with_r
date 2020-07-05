@@ -1,6 +1,6 @@
 # Foundations
 
-## What's the question?
+## What do we mean
 
 Before we can start analyzing data—before we get to the "Import" step—we need to collect it. And we also need to thing about what data we want to collect. But first:
 
@@ -16,16 +16,18 @@ Before we can start analyzing data—before we get to the "Import" step—we nee
 
 [@Navarro_learning_2019, pp.13–14]
 
-Here's an example. A company wants to understand its workforce, because there's a vague idea that a large number of the staff are thinking about retirement in the next couple of years. The human resource (HR) department might be thinking about implementing knowledge transfer training, or some sort of incentive to encourage people to stay (or leave...), or to accelerate hiring to offset the increase in departures. So the HR department has asked you, the data analyst, for an analysis of the demographics of the company. 
+Here's an example. A company wants to understand its workforce, because there's a vague idea that a large number of the staff are thinking about retirement in the next couple of years. The term the human resource (HR) department is using is "succession planning", meaning developing existing staff and recruiting to prepare for departures. Before making the business decision to allocate any resources to this initiative, the company's executive has asked the HR department to describe the magnitude of the risk to the organization: What percent of the staff are about to retire? In what departments? What positions do these potential retirees occupy? Now the HR department has asked you, the data analyst, for an analysis of the demographics of the company. 
 
 We know that _age_ is going to be a _theoretical construct_ we want to measure. In Canada you can start collecting your [Canada Pension Plan (CPP)](https://www.canada.ca/en/services/benefits/publicpensions/cpp.html) at age 60, so part of our analysis might be to find the proportion of staff who are either already 60 or older, or are within three years of that age.
 
 A _measure_ we have available is in the human resource database: each staff member's date of birth. This is collected when people are hired, and is required for various purposes, including tax accounting.
 
-But your date of birth is not your age. To find your age, we have to calculate the difference between that date and today. So to _operationalize_ the measure we have, we might need an **R** equation, using the functions in the package {lubridate}, that looks like this:
+But you will have already noticed that your date of birth is not your age. To find your age, we have to calculate the difference between that date and today. So to _operationalize_ the measure we have, we might need an **R** equation, using the functions in the package {lubridate}, that looks like this:
 
-`age_this_year <- ymd(19731022) %--% today() %/% years(1)` ^[The birthdate of [Ichiro Suzuki](https://en.wikipedia.org/wiki/Ichiro_Suzuki).] ^[For more information, see Clay Ford, ["Working with dates and time in R using the lubridate package"](https://data.library.virginia.edu/working-with-dates-and-time-in-r-using-the-lubridate-package/)
-[@Ford_lubridate_2017].]
+`age_this_year <- ymd(19731022) %--% today() %/% years(1)` ^[The birthdate of [Ichiro Suzuki](https://en.wikipedia.org/wiki/Ichiro_Suzuki).] ^[This code chunk was modified from [@Richmond_age_2018]. For more information about calculating intervals using the {lubridate} package[@R-lubridate], see [@Ford_lubridate_2017].]
+
+
+And our _variable_ results from this calculation: in the example we called it `age_this_year`. Note that this variable will require recalculation every time we repeat our analysis—one's age is not a static value! In a company with roughly 2,500 staff, there's 50-50 chance it is someone's birthday today, and with 4,000 staff it is virtually certain. [@Yau_birthday_2017]
 
 
 See also [@Hellerstein_etal_2017]
