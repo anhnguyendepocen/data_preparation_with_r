@@ -44,7 +44,7 @@ The author would like to acknowledge everyone who has contributed to the books, 
 
 The source code for this ebook can be found at this github repository: https://github.com/MonkmanMH/here_be_dragons 
 
-This book is written in **Markdown**, using the [**bookdown**] package [@R-bookdown], and published to the web at [bookdown.org](https://bookdown.org/).
+This book is written in **Markdown**, using the {bookdown} package [@R-bookdown], and published to the web at [bookdown.org](https://bookdown.org/).
 
 
 ```{r eval=FALSE}

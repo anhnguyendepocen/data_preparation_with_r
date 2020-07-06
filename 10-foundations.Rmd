@@ -30,5 +30,7 @@ But you will have already noticed that your date of birth is not your age. To fi
 And our _variable_ results from this calculation: in the example we called it `age_this_year`. Note that this variable will require recalculation every time we repeat our analysis—one's age is not a static value! In a company with roughly 2,500 staff, there's 50-50 chance it is someone's birthday today, and with 4,000 staff it is virtually certain. [@Yau_birthday_2017]
 
 
-See also [@Hellerstein_etal_2017]
+## Workflow
+
+See [@Hellerstein_etal_2017], Chapter 2 "A Data Workflow Framework"
 
