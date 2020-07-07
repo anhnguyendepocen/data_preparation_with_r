@@ -1,0 +1,31 @@
+
+
+Might be handy
+JSON formatter/XML editor  https://jsonformatter.org/xml-editor
+
+
+
+
+Weather stations page: I think this is the slice
+
+```
+   <section>
+    <div class="wb-tabs wb-top-tabs print-active ignore-session">
+        <div class="tabpanels">
+            <details id="details-panela1"  open="open">
+                <summary>This hour's</summary>
+                <div id="hourly-container"></div>
+            </details>
+            <details id="details-panela2">
+                <summary>Today's</summary>
+                <div id="today-container"></div>
+            </details>
+            <details id="details-panela3">
+                <summary>Yesterday's</summary>
+                <div id="yesterday-container"></div>
+            </details>
+        </div>
+    </div>
+    </section>
+```
+
