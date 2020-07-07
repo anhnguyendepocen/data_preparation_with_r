@@ -235,3 +235,12 @@ ws_bc %>%
 
 ```
 
+
+```{r}
+ws_bc %>% 
+  html_nodes('body') %>% 
+  xml_find_all("//tr") 
+
+
+
+```
