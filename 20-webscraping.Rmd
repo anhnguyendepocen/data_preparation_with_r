@@ -2,11 +2,17 @@
 
 The web is an amazing repository of data. Some of the pages don't change very often, while others are changing frequently. Some examples:
 
-* The table showing the latest unemployment rate in Canada, published by Statistics Canada, is updated monthly.
+* The tables that tabulate the results of [the Labour Force Survey conducted by Statistics Canada](https://www150.statcan.gc.ca/n1/en/type/data?subject_levels=14&sourcecode=3701&freq=6#tables), including the unemployment rate in Canada and each provinice, are updated monthly.
 
 * The [Billboard Hot 100 music chart](https://www.billboard.com/charts/hot-100) is updated weekly.
 
-* The Environment Canada weather forecast page for [Victoria, British Columbia](https://weather.gc.ca/past_conditions/index_e.html?station=yyj) is updated every hour (as is the similar page for . 
+* The Environment Canada weather forecast page for [Victoria, British Columbia](https://weather.gc.ca/past_conditions/index_e.html?station=yyj) is updated every hour (as are the similar pages for 118 weather stations locations across British Columbia, and more across the rest of Canada). 
 
+
+
+
+## Lesson: Introduction to webscraping
+
+Library Carpentry, https://librarycarpentry.org/lc-webscraping/
 
 

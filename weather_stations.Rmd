@@ -17,8 +17,49 @@ https://datamine.purdue.edu/seminars/spring2020/stat19000project07.html
 
 
 
+Xpath syntax: https://www.w3schools.com/xml/xpath_intro.asp
 
-Billboard example
+
+
+## packages
+
+```{r}
+
+library(dplyr)
+
+library(rvest)
+library(xml2)
+
+```
+
+### LEGO movie example
+
+http://rvest.tidyverse.org/articles/selectorgadget.html
+
+```{r}
+lego_url <- "https://www.imdb.com/title/tt1490017/"
+html <- read_html(lego_url)
+
+cast <- html_nodes(html, ".primary_photo+ td a")
+
+length(cast)
+
+cast[1:2]
+
+```
+
+```{r}
+
+html_text(cast, trim = TRUE)
+
+```
+
+
+
+
+
+### Billboard example
+
 https://github.com/keithmcnulty/scraping#basic-harvesting-the-billboard-hot-100-page
 
 
@@ -36,8 +77,8 @@ body_nodes <- hot100 %>%
 
 body_nodes
 
-body_nodes %>% 
-  html_children()
+#body_nodes %>% 
+#  html_children()
 
 ```
 
@@ -66,7 +107,12 @@ knitr::kable(
 ```
 
 
-## Weather stations in Canada
+## Weather stations in British Columbia
+
+This page has the hourly weather for the Environment Canada weather stations in British Columbia:
+
+https://weather.gc.ca/provincialsummary_table/index_e.html?prov=bc&page=hourly
+
 
 
 ```{r}
@@ -82,23 +128,110 @@ body_nodes <- ws_bc %>%
  html_children()
 body_nodes
 
-
 ```
+
 
 <a href="/past_conditions/index_e.html?station=yxx" title="Display Past 24 Hour hourly observations for this station">Abbotsford Airport</a>
 
 ```{r}
 
-stations <- ws_bc %>% 
-  rvest::html_nodes('body') %>% 
-  xml2::xml_find_all("///td[contains(@a, '/past_conditions/index_e.html?station=')]") %>% 
-  rvest::html_text()
+stations <- html_nodes(ws_bc, "#hourtable a")
+
+length(stations)
+
+stations <- xml_nodes(ws_bc, "#hourtable_info , td:nth-child(1)")
+
+# "a , #hourtable_info"
+
+length(stations)
+
+stations[1:2]
+```
 
 
-stations <- ws_bc %>% 
-  rvest::html_nodes('body') %>% 
-  xml2::xml_find_all("///a[contains(@href, 'station=')]") %>% 
-  rvest::html_text()
+```{r}
+
+xml_nodes(ws_bc, "#hourtable")
+
+
+stations <- html_nodes(ws_bc, "#hourtable")
+
+length(stations)
+
+stations <- xml_node(ws_bc, "#hourtable")
+
+length(stations)
+
+```
+
+//*[(@id = "hourtable")]
+
+```{r}
+
+# 
+
+hourtable <- "//*[(@id = \"hourtable\")]"
+
+
+html_nodes(ws_bc, xpath = hourtable)
+xml_nodes(ws_bc, xpath = hourtable)
+
+```
+
+
+
+```{r}
+
+html_nodes(ws_bc, xpath = "//*[(@id = \"hourtable\")]")
+
+html_nodes(ws_bc, xpath = "//td[(((count(preceding-sibling::*) + 1) = 1) and parent::*)]")
+
+html_nodes(ws_bc, xpath = "dataTables_wrapper no-footer")
+
+
+html_nodes(ws_bc, xpath = "//td[(((count(preceding-sibling::*) + 1) = 1) and parent::*)] | //td[(((count(preceding-sibling::*) + 1) = 1) and parent::*)]//*[(@id = \"header1\")]")
+
+
+html_nodes(ws_bc, "tr:nth-child(2) td")
+
+html_nodes(ws_bc, xpath = "td:nth-child(1)")
+
+```
+
+
+```{r}
+
+ws_bc %>% 
+  html_nodes('body') %>% 
+  xml_find_all("//div[contains(@id, 'hourly-container')]") %>% 
+  html_text()
+
+
+ws_bc %>% 
+  html_nodes('body') %>% 
+  xml_find_all("//*[(@id = '#hourtable')]") %>% 
+  html_text()
+
+ws_bc %>% 
+  xml_nodes('#hourtable')
+
+
+ws_bc %>% 
+  html_nodes('body') %>% 
+  xml_find_all("//*[(@id = '#hourtable')]") %>% 
+  html_text()
+
+
+ws_bc %>% 
+  html_nodes('body') %>% 
+  xml_find_all("//*[(@id = '#hourtable_wrapper')]") %>% 
+  html_text()
+
+
+ws_bc %>% 
+  html_nodes('body') %>% 
+  xml_find_all("//tr[(((count(preceding-sibling::*) + 1) = 55) and parent::*)]//td[(((count(preceding-sibling::*) + 1) = 1) and parent::*)]") %>% 
+  html_text()
 
 ```
 
