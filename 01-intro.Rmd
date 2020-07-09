@@ -1,19 +1,20 @@
 
 # Introduction {#intro}
 
-Data is proliferating, collected from myriad events in our lives. Data about your day today might be collected when you 
+Data is proliferating, collected as we go about our lives. Data about your day today might be collected when you 
 
-* bought a cup of coffee (which generates at least three types of data: about the drink itself, about your coffee habits through the rewards program, and about the financial transaction); 
+* bought a cup of coffee (which generates at least three types of data: about the type of drink you ordered, about your coffee habits through the rewards program, and about the financial transaction—which is used by both the store and by you); 
 
-* travelled to your place of work or study, measured by the movement of your cell phone; 
+* travelled to your place of work or study, captured through the movement of your cell phone; 
+
+* renewed your driver's license;
 
 * your fitness activities through your wearable tech; and
 
 * watched a movie on a streaming service.
 
-A lot has been written about the benefits of organizations being "data-driven", as better decisions can be made as a consequence of good data analysis. There is no limit to where data analysis is being applied; businesses can compete on analytics [@Davenport_Harris_2007] and public health strategies during a pandemic can be informed [@Polonsky_etal_2019].
-
-The people who can extract insights from that the relevant data are very much in demand.
+A lot has been written about the benefits of organizations being "data-driven", when good data analysis leads to better decisions. There is no limit to the contexts where data analysis is being applied. In the private sector businesses can compete on analytics [@Davenport_Harris_2007], including retailers [@stitchfix_algo] and supply chain management [@Ashton_2018]. It can also be used in the public sector: data analysis can inform 
+public health strategies during a pandemic [@Polonsky_etal_2019].
 
 The process of going from raw data to decision support is often called data science. It combines the academic disciplines of statistics, computer programming, and the subject matter (be it astronomy, psychology, economics, or business). [@Conway_Venn_2010]
 
@@ -21,6 +22,7 @@ The typical data science process has been described in this model [@Wickham_Grol
 
 ![the data science process](data-science.png)
 
+The generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019].
 
 Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results. Other data sets might be chosen for their statistical properties, or compiled as a summary example. 
 
@@ -30,16 +32,20 @@ But in real life the data we find ourselves working with is, more often than not
 
 * Data can be stored in different formats–spreadsheets, databases, software-specific file formats, websites, and PDF files. We need to have tools to access the data, no matter the file format.
 
-* We might receive data from multiple sources, so we end up with two files that have what appears to be the same value coded in different ways. For example, my home province in Canada can be represented as "British Columbia", "B.C.", or "BC". And don't get me started on date formats—we'll save that for later.
+* The data might be stored in an untidy layout. [@tidydata]
 
-* Data might have as-of-yet undetected errors. It might be incomplete, inconsistent, or it might have data entry errors.
+* We might receive data from multiple sources, so we end up with two files that have the same value but coded in different ways. For example, my home province in Canada can be represented as "British Columbia", "B.C.", or "BC". All three are accurate, but can cause problems if they are inconsistent across the data sources. And don't get me started on date formats—we'll save that for later.
 
-* It might have bias. And there are many different types of bias.
+* Data might have as-of-yet undetected errors. It might be incomplete, inconsistent, or it might have data entry mistakes and typos.
+
+* It might have bias...and there are many different types of bias.
 
 * It might contain sensitive information, and our sharing of the data, including the publication of reports, needs to protect the individual records of the people or businesses that provided the information. For example, you might be working with health records or tax records. Any disclosure of an individual record might be considered a privacy breach...so you have to take great care to ensure that what you've published doesn't violate any legal, ethical, or moral frameworks.
 
 
-This book will introduce steps to ensure that you can assemble your data in a way that allows you to undertake the rest of the data science process, including making data and analysis available for a wider audience. Much of what is required in these steps can be programmed in R, so that your efforts are reproducible. (For more about what is meant by "reproducibility", see  [@Gandrud_2015] and [@Smith_reproducible_2017].)
+This book will introduce steps to ensure that you can assemble your data in a way that allows you to undertake the rest of the data science process, including making data and analysis available for a wider audience, including other data analysts who might seek to use the data in further analysis. 
+
+Much of what is required in these steps can be programmed in the statistical programming language R, so that your efforts are reproducible. (For more about what is meant by "reproducibility", see [@Gandrud_2015] and [@Smith_reproducible_2017].) There are many packages that have been developed to explicitly tackle these challenges; this book isn't intended to catalogue them all, but to provide a current survey of ones commonly used. The sections that pertain to connecting to, querying, and manipulating databases will delve into the database query language SQL.
 
 
 
@@ -55,6 +61,8 @@ Importing data from different file formats
 
 [Webscraping]: pulling data from websites
 
+[Connecting to databases]: connecting and querying
+
 
 ### Transforming data
 
@@ -62,21 +70,36 @@ Importing data from different file formats
 
 * Missing values
 
+* Inconsistency
+
+* Finding duplicates
+
 Data validation
+
+### Data transformation
+
+Structure
+
+Manipulation: creating new variables
+
 
 ### Storing data
 
-Data documentation
 
-Data transformation: structure
-
-Data transformation: manipulation
 
 ### Sharing data
 
+File formats
+
+Data documentation
+
 [Anonymity and Confidentiality]
 
-File formats
+
+
+## Jumping from the tutorials into your own data
+
+https://twitter.com/beeonaposy/status/1281301404418703364?s=20
 
 
 
