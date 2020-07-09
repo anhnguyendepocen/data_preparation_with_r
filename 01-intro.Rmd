@@ -1,3 +1,4 @@
+
 # Introduction {#intro}
 
 Data is proliferating, collected from myriad events in our lives. Data about your day today might be collected when you 
