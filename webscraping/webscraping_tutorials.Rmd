@@ -1,0 +1,131 @@
+---
+title: "weather stations"
+output: html_notebook
+---
+
+Webscraping with rvest
+
+https://www.dataquest.io/blog/web-scraping-in-r-rvest/
+
+
+https://stat4701.github.io/edav/2015/04/02/rvest_tutorial/
+
+https://towardsdatascience.com/functions-with-r-and-rvest-a-laymens-guide-acda42325a77
+
+https://www.r-bloggers.com/using-rvest-to-scrape-an-html-table/
+
+https://www.analyticsvidhya.com/blog/2017/03/beginners-guide-on-web-scraping-in-r-using-rvest-with-hands-on-knowledge/
+
+https://datamine.purdue.edu/seminars/spring2020/stat19000project07.html
+
+
+
+Xpath syntax: https://www.w3schools.com/xml/xpath_intro.asp
+
+
+
+## packages
+
+```{r}
+
+library(dplyr)
+
+library(rvest)
+library(xml2)
+
+```
+
+### LEGO movie example
+
+http://rvest.tidyverse.org/articles/selectorgadget.html
+
+```{r}
+lego_url <- "https://www.imdb.com/title/tt1490017/"
+html <- read_html(lego_url)
+
+cast <- html_nodes(html, ".primary_photo+ td a")
+
+length(cast)
+
+cast[1:2]
+
+```
+
+```{r}
+
+html_text(cast, trim = TRUE)
+
+```
+
+
+
+
+
+### Billboard example
+
+https://github.com/keithmcnulty/scraping#basic-harvesting-the-billboard-hot-100-page
+
+
+```{r}
+
+hot100page <- "https://www.billboard.com/charts/hot-100"
+hot100 <- read_html(hot100page)
+
+hot100
+
+str(hot100)
+
+body_nodes <- hot100 %>% 
+  html_node("body") %>% 
+  html_children()
+
+body_nodes
+
+#body_nodes %>% 
+#  html_children()
+
+```
+
+
+```{r}
+rank <- hot100 %>% 
+  rvest::html_nodes('body') %>% 
+  xml2::xml_find_all("//span[contains(@class, 'chart-element__rank__number')]") %>% 
+  rvest::html_text()
+
+artist <- hot100 %>% 
+  rvest::html_nodes('body') %>% 
+  xml2::xml_find_all("//span[contains(@class, 'chart-element__information__artist')]") %>% 
+  rvest::html_text()
+
+title <- hot100 %>% 
+  rvest::html_nodes('body') %>% 
+  xml2::xml_find_all("//span[contains(@class, 'chart-element__information__song')]") %>% 
+  rvest::html_text()
+
+chart_df <- data.frame(rank, artist, title)
+
+knitr::kable(
+  chart_df  %>% head(10)
+)
+
+```
+
+
+## Weather station: San Francisco
+
+https://www.dataquest.io/blog/web-scraping-in-r-rvest/
+
+https://forecast.weather.gov/MapClick.php?lat=37.7771&lon=-122.4196#.Xl0j6BNKhTY
+
+```{r}
+
+forecasts <- read_html("https://forecast.weather.gov/MapClick.php?lat=37.7771&lon=-122.4196#.Xl0j6BNKhTY") %>%
+    html_nodes(".temp") %>%
+    html_text()
+
+forecasts
+
+```
+
+
