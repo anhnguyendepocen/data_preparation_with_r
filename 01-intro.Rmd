@@ -7,24 +7,27 @@ Data is proliferating, collected as we go about our lives. Data about your day t
 
 * travelled to your place of work or study, captured through the movement of your cell phone; 
 
-* renewed your driver's license;
+* renewed your driver's license (recording information about you such as date of birth, height, weight, and current address);
 
-* your fitness activities through your wearable tech; and
+* went to the gym, and your pulse and breathing rates were captured through your wearable tech; and
 
-* watched a movie on a streaming service.
+* watched a movie on a streaming service, who build a profile about your viewing habits, and make recommendations as to what you might want to watch next.
+
+***
 
 A lot has been written about the benefits of organizations being "data-driven", when good data analysis leads to better decisions. There is no limit to the contexts where data analysis is being applied. In the private sector businesses can compete on analytics [@Davenport_Harris_2007], including retailers [@stitchfix_algo] and supply chain management [@Ashton_2018]. It can also be used in the public sector: data analysis can inform 
 public health strategies during a pandemic [@Polonsky_etal_2019].
 
 The process of going from raw data to decision support is often called data science. It combines the academic disciplines of statistics, computer programming, and the subject matter (be it astronomy, psychology, economics, or business). [@Conway_Venn_2010]
 
-The typical data science process has been described in this model [@Wickham_Grolemund2016]:
+The typical data science process has been described in this model [@Wickham_Grolemund2016], and The generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019]:
 
 ![the data science process](data-science.png)
 
-The generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019].
 
-Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results. Other data sets might be chosen for their statistical properties, or compiled as a summary example. 
+
+
+Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results. Other data sets might be chosen for their statistical properties, or compiled as examples to demonstrate a technique [@R-palmerpenguins], [@R-modeldata]. 
 
 But in real life the data we find ourselves working with is, more often than not, entirely different from those text book examples. 
 
@@ -53,9 +56,7 @@ Much of what is required in these steps can be programmed in the statistical pro
 
 This book is divided into major sections, each with chapters that delve into strategies.
 
-### Acquiring data
-
-[Collecting data]: designing your own original data collection
+### 1. Acquiring data
 
 Importing data from different file formats
 
@@ -64,7 +65,7 @@ Importing data from different file formats
 [Connecting to databases]: connecting and querying
 
 
-### Transforming data
+### 2. Transforming data
 
 [Cleaning data]
 
@@ -76,18 +77,18 @@ Importing data from different file formats
 
 Data validation
 
-### Data transformation
+### 3. Data transformation
 
 Structure
 
 Manipulation: creating new variables
 
 
-### Storing data
+### 4. Storing data
 
 
 
-### Sharing data
+### 5. Sharing data
 
 File formats
 
