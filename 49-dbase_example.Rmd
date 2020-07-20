@@ -1,0 +1,22 @@
+# A data collection example
+
+Let's imagine that you are the data analyst for a store located near a university, so it only sells two products:
+
+* boxes of mac & cheese
+
+* ketchup
+
+The store orders both products from a single wholesaler. The store keeps track of sales, store inventory, and orders using a relational database.
+
+The store is a success, so there's a plan to open a second location. 
+
+Your assignment is to project (forecast) the new store's sales using data from the first store. Some questions you'll need to answer are:
+
+* How many customers does Store 1 serve? (That is, how big is the market?) How big is the area that Store 2 will serve?
+
+* The marketing department has said that people with higher income will eat more mac & cheese, and also use a different variety of ketchup—Dijon ketchup. How can you find out if Area 2 has people with a million dollars?
+
+How do you know that it's a higher income area? How do you know you are selling more?
+
+
+

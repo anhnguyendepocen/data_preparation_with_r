@@ -1,0 +1,18 @@
+# Extract, Transform and Load (ETL)
+
+A commonly heard term that describes the workflow of data analysts is _Extract, Transform, and Load_—or ETL for short. The three major steps are "downloading the data, wrangling it, and importing it into a database". [@Baumer_2019, p.10] 
+
+These steps, individually, have been covered in the earlier chapter of this book. What follows is a description of tools that have been designed to streamline this workflow, and to make our work more reproducible and robust.
+
+Baumer has noted that the source data—what we want to _extract_ from a database, website, or other storage medium—are "sometimes idiosyncratic, platform- or architecture-specific, poorly documented, unshared, and involve custom scripts written in various (and often multiple) languages." [@Baumer_2019, p.3] 
+
+
+
+## ETL
+
+
+R package: [@Baumer_2019]
+
+Package: [@R-etl]
+
+

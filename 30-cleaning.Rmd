@@ -3,6 +3,36 @@
 Some _significant_ applications are demonstrated in this chapter.
 
 
+What are common dirty data problems?
+
+* Column headers are values, not variable names
+
+* Changing type of data
+
+* Multiple variables are stored in one column
+
+* Misspellings (typing errors)
+
+* Value in wrong field (e.g. country entered into `city` field)
+
+* Irregularities (`salary` field in international survey, filled in as Canadian, U.S., and Australian dollars)
+
+* Contradiction (for example, two databases with the same person but the date of birth differs, perhaps due to non-ISO8601 entry: 07-08-79 and 08-07-79 both have the same digits but one could be mm-dd-yy and the other dd-mm-yy...we just don't know which is the correct one. Or is one a typo?)
+
+Detection and localization of errors like:
+
+* Missing values and imputation
+
+* Special values
+
+* Outliers
+
+* Duplicates
+
+
+https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4
+
+
 ## Data cleaning with R
 
 [@Van_der_Loo_de_Jonge_2018]
