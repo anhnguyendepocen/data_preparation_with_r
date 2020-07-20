@@ -1,0 +1,10 @@
+# Manipulating data
+
+The structure of your data will likely need to change.
+
+
+## Data wrangling with R
+
+
+[@McNulty_2020]
+
