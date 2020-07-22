@@ -3,21 +3,28 @@
 Some _significant_ applications are demonstrated in this chapter.
 
 
+## Elements of dirty data
+
 What are common dirty data problems?
 
 * Column headers are values, not variable names
 
-* Changing type of data
+* Changing type of data (some records are numbers and some are character strings)
 
-* Multiple variables are stored in one column
+* Multiple variables are stored in one column 
 
 * Misspellings (typing errors)
 
 * Value in wrong field (e.g. country entered into `city` field)
 
-* Irregularities (`salary` field in international survey, filled in as Canadian, U.S., and Australian dollars)
+* Irregularities in unit of measurement (`salary` field in international survey, filled in as Canadian, U.S., and Australian dollars)
 
 * Contradiction (for example, two databases with the same person but the date of birth differs, perhaps due to non-ISO8601 entry: 07-08-79 and 08-07-79 both have the same digits but one could be mm-dd-yy and the other dd-mm-yy...we just don't know which is the correct one. Or is one a typo?)
+
+* Default values in the place of missing values.
+
+> Dr Davis Lawrence, director of safety-literature database the SafeLit Foundation...tells me that 'in most US states the quality of police crash reports is at best poor for use as a research tool. ... Data-quality checks were rare and when quality was evaluated it was found wanting. For example, in Louisiana for most crashes in the 1980s most of the occupants were males who were born on January 1st, 1950. Almost all of the vehicles involved in crashes were the 1960 model year.' Except they weren't. These were just the default settings. [@Criado_Perez_2019, p.190]
+
 
 Detection and localization of errors like:
 
@@ -31,6 +38,21 @@ Detection and localization of errors like:
 
 
 https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4
+
+
+## Data quality
+
+A good summary of the elements of data quality can be found on the "Data cleansing" page of Wikipedia [@wiki:data_cleansing].
+
+* Validity
+
+* Accuracy
+
+* Completeness
+
+* Consistency
+
+* Uniformity
 
 
 ## Data cleaning with R
