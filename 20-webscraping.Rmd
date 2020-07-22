@@ -1,4 +1,4 @@
-# Webscraping
+# Webscraping {#webscraping}
 
 The web is an amazing repository of data. Some of the pages don't change very often, while others are changing frequently. Some examples:
 

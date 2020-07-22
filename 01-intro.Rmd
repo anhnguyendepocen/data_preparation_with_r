@@ -1,17 +1,18 @@
 
 # Introduction {#intro}
 
-Data is proliferating, collected as we go about our lives. Data about your day today might be collected when you 
+Data is proliferating, collected by scientists who are engaged in research (whether measuring sub-atomic particles or galaxies in the early universe, plant growth or the migration of animals), and also by the tools that are used to conduct the business of the world. Today, data about _you_ might be collected when you: 
 
-* bought a cup of coffee (which generates at least three types of data: about the type of drink you ordered, about your coffee habits through the rewards program, and about the financial transaction—which is used by both the store and by you); 
+* Buy a cup of coffee (which generates at least three types of data: about the type of drink you ordered, about your coffee habits through the rewards program, and about the financial transaction—which is used by both the store and by you); 
 
-* travelled to your place of work or study, captured through the movement of your cell phone; 
+* Travel to your place of work or study, captured through the movement of your cell phone; 
 
-* renewed your driver's license (recording information about you such as date of birth, height, weight, and current address);
+* Renew your driver's license (recording information about you such as date of birth, height, weight, and current address);
 
-* went to the gym, and your pulse and breathing rates were captured through your wearable tech; and
+* Go to the gym, and your pulse and breathing rates were captured through your wearable tech; and
 
-* watched a movie on a streaming service, who build a profile about your viewing habits, and make recommendations as to what you might want to watch next.
+* Watch a movie on a streaming service, who build a profile about your viewing habits, and make recommendations as to what you might want to watch next.
+
 
 ***
 
@@ -20,14 +21,14 @@ public health strategies during a pandemic [@Polonsky_etal_2019].
 
 The process of going from raw data to decision support is often called data science. It combines the academic disciplines of statistics, computer programming, and the subject matter (be it astronomy, psychology, economics, or business). [@Conway_Venn_2010]
 
-The typical data science process has been described in this model [@Wickham_Grolemund2016], and The generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019]:
+The typical data science process has been described in this model [@Wickham_Grolemund2016], and the generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019]:
 
 ![the data science process](data-science.png)
 
 
 
 
-Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results. Other data sets might be chosen for their statistical properties, or compiled as examples to demonstrate a technique [@R-palmerpenguins], [@R-modeldata]. 
+Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results; it is included in the base version of R [@R-base]. Other data sets might be chosen for their statistical properties, or compiled as examples to demonstrate a technique [@R-palmerpenguins], [@R-modeldata]. 
 
 But in real life the data we find ourselves working with is, more often than not, entirely different from those text book examples. 
 
@@ -56,18 +57,23 @@ Much of what is required in these steps can be programmed in the statistical pro
 
 This book is divided into major sections, each with chapters that delve into strategies.
 
-### 1. Acquiring data
+### Foundations
 
-Importing data from different file formats
-
-[Webscraping]: pulling data from websites
-
-[Connecting to databases]: connecting and querying
+[The relationship between the data and the analysis](#foundations)
 
 
-### 2. Transforming data
+### Acquiring data
 
-[Cleaning data]
+[Importing data](#importing): dealing with different file formats
+
+[Webscraping](#webscraping): pulling data from websites
+
+[Connecting to databases](#databases): connecting and querying
+
+
+### Transforming data
+
+[Cleaning data](#cleaning)
 
 * Missing values
 
@@ -77,18 +83,18 @@ Importing data from different file formats
 
 Data validation
 
-### 3. Data transformation
+### Data transformation
 
 Structure
 
 Manipulation: creating new variables
 
 
-### 4. Storing data
+### Storing data
 
 
 
-### 5. Sharing data
+### Sharing data
 
 File formats
 

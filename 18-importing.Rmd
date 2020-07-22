@@ -1,0 +1,23 @@
+# Importing data {#importing}
+
+Before we can start analyzing data—before we get to the "Import" step—we need to collect it. And we also need to thing about what data we want to collect. 
+
+And "collecting data" can mean a lot of different things. It could refer to:
+
+* Running trials or experiments in a controlled laboratory setting.
+
+* Making observations and recording the results of those observations (for example, as an astronomer or biologist might).
+
+* Sampling the people in an area and asking them a series of questions.
+
+* Collecting information as part of a business operation. A familiar example are supermarket checkout scanners which data about grocery purchases, which facilitate operation management of the store by tracking sales and inventory, and generating orders.
+
+* Downloading data from a website, where the downloaded table has data that has already been compiled and summarized from a larger data set. An example would be Statistics Canada's Census data tables.
+
+And it's important to note that your analysis project might require more than one of these methods of data collection.
+
+How you collect the data you need will depend on many factors, including what is already available, what your budget is (some data collection methods will cost a lot more than others), and the legal and regulatory environment (for example, the definition of "personal information" varies from one jurisdiction to the next.
+
+
+
+

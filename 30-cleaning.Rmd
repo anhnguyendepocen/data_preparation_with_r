@@ -1,4 +1,4 @@
-# Cleaning data
+# Cleaning data {#cleaning}
 
 Some _significant_ applications are demonstrated in this chapter.
 
