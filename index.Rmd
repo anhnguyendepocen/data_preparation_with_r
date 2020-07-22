@@ -1,6 +1,6 @@
 --- 
-title: "Finding Your Way Through Data Preparation"
-subtitle: "Essential Steps Before & After Analysis"
+title: "Data Preparation: Essential Steps Before & After Analysis"
+subtitle: "Finding Your Way With R and Other Tools"
 author: "Martin Monkman"
 date: "`r Sys.Date()`"
 #site: bookdown::bookdown_site

@@ -68,7 +68,13 @@ This book is divided into major sections, each with chapters that delve into str
 
 [Webscraping](#webscraping): pulling data from websites
 
+
+### Relational databases
+
 [Connecting to databases](#databases): connecting and querying
+
+[Extract, Transform & Load (ETL)](#etl)
+
 
 
 ### Transforming data

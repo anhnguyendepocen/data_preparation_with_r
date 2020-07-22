@@ -1,4 +1,4 @@
-# Extract, Transform and Load (ETL)
+# Extract, Transform and Load (ETL) {#etl}
 
 A commonly heard term that describes the workflow of data analysts is _Extract, Transform, and Load_—or ETL for short. The three major steps are "downloading the data, wrangling it, and importing it into a database". [@Baumer_2019, p.10] 
 
