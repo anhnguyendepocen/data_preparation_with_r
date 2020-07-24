@@ -16,3 +16,12 @@ The web is an amazing repository of data. Some of the pages don't change very of
 Library Carpentry, https://librarycarpentry.org/lc-webscraping/
 
 
+## {polite} package
+
+https://github.com/dmi3kno/polite
+
+[@R-polite]
+
+
+
+
