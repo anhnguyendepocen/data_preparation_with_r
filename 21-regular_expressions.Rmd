@@ -12,6 +12,17 @@ Often our data manipulations require us to find or change a character, a word, o
 * The phone numbers listed on in a web page.
 
 
+## Some useful symbols
+
+| symbol | meaning |
+|:----|:---- | 
+|`\n`  | line end |
+|`\r`  | carriage return |
+
+
+
+
+
 
 For our example, let's imagine we have a file that has the addresses of some Canadian businesses. One of those columns is called `postal_code`. We know that Canadian postal codes are a six-digit alphanumeric sequence written with a consistent pattern:  `A1B 2C3`, with the letters capitalized, and with a space between the third and fourth characters.
 
