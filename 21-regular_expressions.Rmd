@@ -1,0 +1,23 @@
+# Regular expressions {#regex}
+
+
+>Some people, when confronted with a problem, think: “I know, I’ll use regular expressions.” Now they have two problems.
+— Jamie Zawinski (Quoted in [@Hvitfeldt_Silge_2020])
+
+
+Often our data manipulations require us to find or change a character, a word, or a pattern of letters and numbers. Some examples of things you might want to find:
+
+* All the instances of the word `student` in a column of occupations.
+
+* The phone numbers listed on in a web page.
+
+
+
+For our example, let's imagine we have a file that has the addresses of some Canadian businesses. One of those columns is called `postal_code`. We know that Canadian postal codes are a six-digit alphanumeric sequence written with a consistent pattern:  `A1B 2C3`, with the letters capitalized, and with a space between the third and fourth characters.
+
+Your assignment is to find all the postal codes from businesses in British Columbia.
+
+The first letter is a "postal district"; other than Ontario and Quebec, this is an entire province or territory. The letter "V" starts postal codes in British Columbia. ^[For more about Canadian postal codes, see the [Wikipedia page "Postal codes in Canada"](https://en.wikipedia.org/wiki/Postal_codes_in_Canada#Table_of_all_postal_codes)] 
+
+So we know we can start with a sequence that starts with "V"...but how do we deal with the rest of the sequence?
+
