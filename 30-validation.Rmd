@@ -1,6 +1,5 @@
-# Cleaning data {#cleaning}
+# Data validation {#validation}
 
-Some _significant_ applications are demonstrated in this chapter.
 
 
 ## Elements of dirty data
@@ -66,12 +65,4 @@ A good summary of the elements of data quality can be found on the "Data cleansi
 * Consistency
 
 * Uniformity
-
-
-## Data cleaning with R
-
-[@Van_der_Loo_de_Jonge_2018]
-
-[@Buttrey_Whitaker_2017]
-
 

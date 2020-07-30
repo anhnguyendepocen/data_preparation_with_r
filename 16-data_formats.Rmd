@@ -8,12 +8,12 @@ The data gets stored in a variety of electronic formats. The choice of format mi
 
 * the nature of the data being collected.
 
-There is sometimes (often?) no right answer as to the best format for a particular use case—there are pros and cons to each. (With that said, there is often a clear _wrong_ choice for data storage...we're looking at you, PDF.) What this means is that in your workflow you will have to deal with data that needs to be extracted from a multitude of systems, and will be available to you in a multitude of formats.
+There is sometimes (often?) no right answer as to the best format for a particular use case—there are pros and cons to each. (With that said, there is often a clear _wrong_ choice for data storage and sharing...we're looking at you, PDF.) What this means is that in your workflow you will have to deal with data that needs to be extracted from a multitude of systems, and will be available to you in a multitude of formats.
 
-> It is essential that a statistician can talk to the database specialist, and, as a team member, the statistician, along with most others, will be expected to be able to use the database facilities for most purposes by themselves, and of course advise on aspects of the design. There is always much preliminary ‘data cleaning’ to do before an analysis can begin, almost regardless of how good a job is done by the database specialist. [@Venables_IDT_review_2010]
+> It is essential that a statistician can talk to the database specialist, and, as a team member, the statistician, along with most others, will be expected to be able to use the database facilities for most purposes by themselves, and of course advise on aspects of the design. There is always much preliminary 'data cleaning' to do before an analysis can begin, almost regardless of how good a job is done by the database specialist. [@Venables_IDT_review_2010]
 
-(We will not discuss the complexities of the different data storage formats, and the decision process that goes into deciding which format is appropriate. We'll just assume that the professionals who built the data storage system made well-informed decision, including balancing the various trade-offs between different formats.)
+We will not discuss the complexities of the different data storage formats, and the decision process that goes into deciding which format is appropriate. We'll just assume that the professionals who built the data storage system made well-informed decision, including balancing the various trade-offs between different formats.
 
 
-Reading: Chapter 7, "Data Storage" of [@Murrell_data_technologies] ([link](http://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node51.html))
+Reading: Chapter 7, "Data Storage" of [@Murrell_data_technologies] — [link](http://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node51.html)
 

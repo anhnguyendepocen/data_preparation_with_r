@@ -1,0 +1,33 @@
+# Cleaning data {#cleaning}
+
+After having gone through a data validation process, you may have identified problems with your data. In this chapter, we will explore methods for cleaning the data.
+
+
+
+## Elements of dirty data
+
+_(NOTE: repeated from [#validation])_
+
+
+## Data quality
+
+A good summary of the elements of data quality can be found on the "Data cleansing" page of Wikipedia [@wiki:data_cleansing].
+
+* Validity
+
+* Accuracy
+
+* Completeness
+
+* Consistency
+
+* Uniformity
+
+
+## Data cleaning with R
+
+[@Van_der_Loo_de_Jonge_2018]
+
+[@Buttrey_Whitaker_2017]
+
+
