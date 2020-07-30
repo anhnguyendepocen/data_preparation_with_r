@@ -57,7 +57,7 @@ Much of what is required in these steps can be programmed in the statistical pro
 
 This book is divided into major sections, each with chapters that delve into strategies.
 
-### Foundations
+### Data foundations
 
 [The relationship between the data and the analysis](#foundations)
 

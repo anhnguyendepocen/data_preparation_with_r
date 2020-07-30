@@ -1,5 +1,16 @@
 # Foundations {#foundations}
 
+
+## What is data?
+
+One definition of data is as follows:
+
+> Characteristics or information, usually numerical, that are collected through observation. [@OECD_glossary_2007, p.180]
+
+This can be expanded:
+
+> The data obtained from observations are related to the variable being studied. These data are quantitative, qualitative, discrete or continuous if the corresponding variable is quantitative, qualitative, discrete or continuous, respectively. [@Dodge_encyclopedia_2008, "Data", pp.149-150]
+
 ## What do we mean
 
 Before we can start analyzing data—before we get to the "Import" step—we need to collect it. And we also need to thing about what data we want to collect. But first:
@@ -27,7 +38,27 @@ But you will have already noticed that your date of birth is not your age. To fi
 `age_this_year <- ymd(19731022) %--% today() %/% years(1)` ^[The birthdate of [Ichiro Suzuki](https://en.wikipedia.org/wiki/Ichiro_Suzuki).] ^[This code chunk was modified from [@Richmond_age_2018]. For more information about calculating intervals using the {lubridate} package[@R-lubridate]; see [@Ford_lubridate_2017].]
 
 
-And our _variable_ results from this calculation: in the code example we called it `age_this_year`. Note that this variable will require recalculation every time we repeat our analysis—one's age is not a static value! In a company with roughly 2,500 staff, there's 50-50 chance it is someone's birthday today, and with 4,000 staff it is virtually certain. [@Yau_birthday_2017]
+And our _variable_ results from this calculation: in the code example we called it `age_this_year`. Note that this variable will require recalculation every time we repeat our analysis—one's age is not a static value! In a company with roughly 2,500 staff, there's 50-50 chance it is someone's birthday today, and with 4,000 staff it is virtually certain. [@Yau_birthday_2017] This means that this variable will only be precisely correct for a few days at most.
+
+
+
+## Classification systems
+
+It's useful to be aware of various classification systems that already exist. That way, you can 
+
+* save yourself the challenge of coming up with your own classifications for your variables, and
+
+* ensure that your analysis can be compared to other results.
+
+Of course, these classification systems are subject-matter specific. 
+
+If you're working in the area of social and economic research, the national and international statistics agencies provide a robust and in-depth system, much of which is designed to allow for international comparisons.
+
+* International: OECD
+
+* Statistics Canada [@StatCan_definitions]
+
+* 
 
 
 ## Workflow
