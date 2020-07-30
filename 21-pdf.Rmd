@@ -1,0 +1,20 @@
+# Getting data from PDF files {#pdf}
+
+PDF files are great...for publishing. But for data dissemination, they are something of a challenge.
+
+
+
+## Lesson: Introduction to webscraping
+
+Library Carpentry, https://librarycarpentry.org/lc-webscraping/
+
+
+## {polite} package
+
+https://github.com/dmi3kno/polite
+
+[@R-polite]
+
+
+
+

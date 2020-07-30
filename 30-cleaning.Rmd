@@ -26,6 +26,8 @@ What are common dirty data problems?
 > Dr Davis Lawrence, director of safety-literature database the SafeLit Foundation...tells me that 'in most US states the quality of police crash reports is at best poor for use as a research tool. ... Data-quality checks were rare and when quality was evaluated it was found wanting. For example, in Louisiana for most crashes in the 1980s most of the occupants were males who were born on January 1st, 1950. Almost all of the vehicles involved in crashes were the 1960 model year.' Except they weren't. These were just the default settings. [@Criado_Perez_2019, p.190]
 
 
+## Validation
+
 Detection and localization of errors like:
 
 * Missing values and imputation
@@ -38,6 +40,17 @@ Detection and localization of errors like:
 
 
 https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4
+
+
+Statistics Canada: [Statistics Canada Quality Guidelines](https://www150.statcan.gc.ca/n1/en/catalogue/12-539-X)
+
+
+
+EuroStat: [Data Validation - Overview](https://ec.europa.eu/eurostat/cros/content/data-validation-overview_en)
+
+* [definitions](https://ec.europa.eu/eurostat/cros/content/definitions_en)
+
+* [landing page?](https://ec.europa.eu/eurostat/data/data-validation)
 
 
 ## Data quality
