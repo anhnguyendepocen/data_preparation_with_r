@@ -63,5 +63,7 @@ If you're working in the area of social and economic research, the national and 
 
 ## Workflow
 
+See [@Zumel_2016]
+
 See [@Hellerstein_etal_2017], Chapter 2 "A Data Workflow Framework"
 
