@@ -1,17 +1,19 @@
 
 # Introduction {#intro}
 
+## The origin of data
+
 Data is proliferating, collected by scientists who are engaged in research (whether measuring sub-atomic particles or galaxies in the early universe, plant growth or the migration of animals), and also by the tools that are used to conduct the business of the world. Today, data about _you_ might be collected when you: 
 
-* Buy a cup of coffee (which generates at least three types of data: about the type of drink you ordered, about your coffee habits through the rewards program, and about the financial transaction—which is used by both the store and by you); 
+* Buy a cup of coffee at a café. This generates at least three types of data: about the type of drink you ordered, about your coffee habits through the rewards program, and about the financial transaction—which is used by both the store and by you. 
 
-* Travel to your place of work or study, captured through the movement of your cell phone; 
+* Travel to your place of work or study, captured through the movement of your cell phone. 
 
-* Renew your driver's license (recording information about you such as date of birth, height, weight, and current address);
+* Renew your driver's license, where information about you such as date of birth, height, weight, and current address is recorded.
 
-* Go to the gym, and your pulse and breathing rates were captured through your wearable tech; and
+* Go to the gym, and your pulse and breathing rates were captured through your wearable tech.
 
-* Watch a movie on a streaming service, who build a profile about your viewing habits, and make recommendations as to what you might want to watch next.
+* Watch a movie on a streaming service, who build a profile about your viewing habits, make recommendations as to what you might want to watch next, and evaluate the success of the things you watch.
 
 
 ***
@@ -21,18 +23,16 @@ public health strategies during a pandemic [@Polonsky_etal_2019].
 
 The process of going from raw data to decision support is often called data science. It combines the academic disciplines of statistics, computer programming, and the subject matter (be it astronomy, psychology, economics, or business). [@Conway_Venn_2010]
 
-The typical data science process has been described in this model [@Wickham_Grolemund2016], and the generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019]:
+The typical data science process has been described in this model [@Wickham_Grolemund2016]:
 
-![the data science process](data-science.png)
+![The data science process](data-science.png)
+
+The generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019]; in this book we will focus on the Import to Tidy to Transform steps.
 
 
-
-
-Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results; it is included in the base version of R [@R-base]. Other data sets might be chosen for their statistical properties, or compiled as examples to demonstrate a technique [@R-palmerpenguins], [@R-modeldata]. 
+Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results; it is included in the base version of R [@R-base]. Other data sets might be chosen for their statistical properties [@R-palmerpenguins], compiled as examples to demonstrate a technique [@R-modeldata], or aggregate data that has been validated and cleaned [@R-Lahman]. 
 
 But in real life the data we find ourselves working with is, more often than not, entirely different from those text book examples. 
-
-* The data we need might not exist yet, so we have to design our own data collection process.
 
 * Data can be stored in different formats–spreadsheets, databases, software-specific file formats, websites, and PDF files. We need to have tools to access the data, no matter the file format.
 
@@ -47,9 +47,11 @@ But in real life the data we find ourselves working with is, more often than not
 * It might contain sensitive information, and our sharing of the data, including the publication of reports, needs to protect the individual records of the people or businesses that provided the information. For example, you might be working with health records or tax records. Any disclosure of an individual record might be considered a privacy breach...so you have to take great care to ensure that what you've published doesn't violate any legal, ethical, or moral frameworks.
 
 
-This book will introduce steps to ensure that you can assemble your data in a way that allows you to undertake the rest of the data science process, including making data and analysis available for a wider audience, including other data analysts who might seek to use the data in further analysis. 
+This book will introduce steps to ensure that you can assemble your data in a way that allows you to undertake the rest of the data science process, including making data and analysis available for a wider audience, such as other data analysts who might seek to use the data in further analysis. 
 
-Much of what is required in these steps can be programmed in the statistical programming language R, so that your efforts are reproducible. (For more about what is meant by "reproducibility", see [@Gandrud_2015] and [@Smith_reproducible_2017].) There are many packages that have been developed to explicitly tackle these challenges; this book isn't intended to catalogue them all, but to provide a current survey of ones commonly used. The sections that pertain to connecting to, querying, and manipulating databases will delve into the database query language SQL.
+Much of what is required in these steps can be programmed in the statistical programming language R, so that your efforts are reproducible. (For more about what is meant by "reproducibility", see [@Gandrud_2015] and [@Smith_reproducible_2017].) 
+
+There are many R packages that have been developed to explicitly tackle these challenges; this book isn't intended to catalogue them all, but to provide a current survey of ones commonly used. The sections that pertain to connecting to, querying, and manipulating databases will delve into the database query language SQL.
 
 
 
