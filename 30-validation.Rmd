@@ -51,6 +51,11 @@ EuroStat: [Data Validation - Overview](https://ec.europa.eu/eurostat/cros/conten
 
 * [landing page?](https://ec.europa.eu/eurostat/data/data-validation)
 
+Methodology book: [@ESS_datavalidation_2018]
+
+
+Validation: [@Kennedy_1997], [@Chan_2011]
+
 
 ## Data quality
 
