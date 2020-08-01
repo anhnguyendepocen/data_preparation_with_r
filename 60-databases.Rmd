@@ -17,6 +17,10 @@ Either way, somebody is going to tell that you're saying it wrong. [@Thanh_2018]
 
 
 
+### Second: setting up a database
+
+See [@Zumel_Mount_2019, chapter 2.2]
+
 
 
 [@Malik_Goldwasser_Johnston_2019]

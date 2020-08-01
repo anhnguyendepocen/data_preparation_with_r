@@ -19,5 +19,6 @@ And it's important to note that your analysis project might require more than on
 How you collect the data you need will depend on many factors, including what is already available, what your budget is (some data collection methods will cost a lot more than others), and the legal and regulatory environment (for example, the definition of "personal information" varies from one jurisdiction to the next.
 
 
+See [@Zumel_Mount_2019, chapter 2]
 
 
