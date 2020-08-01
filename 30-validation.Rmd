@@ -25,6 +25,9 @@ What are common dirty data problems?
 > Dr Davis Lawrence, director of safety-literature database the SafeLit Foundation...tells me that 'in most US states the quality of police crash reports is at best poor for use as a research tool. ... Data-quality checks were rare and when quality was evaluated it was found wanting. For example, in Louisiana for most crashes in the 1980s most of the occupants were males who were born on January 1st, 1950. Almost all of the vehicles involved in crashes were the 1960 model year.' Except they weren't. These were just the default settings. [@Criado_Perez_2019, p.190]
 
 
+See [@Zumel_Mount_2019, chapters 3 and 4]
+
+
 ## Validation
 
 Detection and localization of errors like:
