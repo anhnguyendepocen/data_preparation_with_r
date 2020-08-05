@@ -5,15 +5,14 @@
 
 Data is proliferating, collected by scientists who are engaged in research (whether measuring sub-atomic particles or galaxies in the early universe, plant growth or the migration of animals), and also by the tools that are used to conduct the business of the world. Today, data about _you_ might be collected when you: 
 
-* Buy a cup of coffee at a café. This generates at least three types of data: about the type of drink you ordered, about your coffee habits through the rewards program, and about the financial transaction—which is used by both the store and by you. 
+* Buy a cup of coffee at a café. This generates at least three types of data: about the type of drink you ordered, about your coffee habits through the rewards program, and about the financial transaction—which is used by the store to measure sales and by you to manage your personal budget. 
 
-* Travel to your place of work or study, captured through the movement of your cell phone. 
+* Watch a movie or listen to some music on a streaming service. The service provider builds a profile about your preferences, which it can then use to make recommendations as to what you might also enjoy. The service can also use the aggregated data from all subscribers to evaluate the success of the content on their platform.
 
-* Renew your driver's license, where information about you such as date of birth, height, weight, and current address is recorded.
+* Renew your driver's license. Information about you such as date of birth, height, weight, and current address is recorded, which you can then use as a piece of identification to authenticate who you are. The licensing agency can also use the data in aggregate to estimate how many people will be renewing their licenses each month, and often share the data (securely, of course!) with other agencies. In British Columbia, the agency that licenses drivers shares elements of the database, such as your current address, with the provincial electoral agency, allowing for an up-to-date list of eligible voters in the province. [@EBC_Annual_201718, page 70]
 
-* Go to the gym, and your pulse and breathing rates were captured through your wearable tech.
+* Travel to your place of work or study, captured through the movement of your cell phone. Aggregated location and movement can be used for a variety of purposes, including by GPS systems to indicate areas of road congestion, or to let you know when the next bus will arrive at your stop.
 
-* Watch a movie on a streaming service, who build a profile about your viewing habits, make recommendations as to what you might want to watch next, and evaluate the success of the things you watch.
 
 
 ***
@@ -30,7 +29,7 @@ The typical data science process has been described in this model [@Wickham_Grol
 The generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019]; in this book we will focus on the Import to Tidy to Transform steps.
 
 
-Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results; it is included in the base version of R [@R-base]. Other data sets might be chosen for their statistical properties [@R-palmerpenguins], compiled as examples to demonstrate a technique [@R-modeldata], or aggregate data that has been validated and cleaned [@R-Lahman]. 
+Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results; it is included in the base version of R [@R-base]. Other data sets might be excerpted to use as teaching examples [@R-gapminder], chosen for their statistical properties [@R-palmerpenguins], compiled as examples to demonstrate a methodology or technique [@R-modeldata], or to aggregate, validate, and clean still-larger data collections [@R-Lahman]. 
 
 But in real life the data we find ourselves working with is, more often than not, entirely different from those text book examples. 
 
@@ -55,69 +54,4 @@ There are many R packages that have been developed to explicitly tackle these ch
 
 
 
-## Structure of this book
-
-This book is divided into major sections, each with chapters that delve into strategies.
-
-### Data foundations
-
-[The relationship between the data and the analysis](#foundations)
-
-
-### Acquiring data
-
-[Importing data](#importing): dealing with different file formats
-
-[Webscraping](#webscraping): pulling data from websites
-
-
-### Relational databases
-
-[Connecting to databases](#databases): connecting and querying
-
-[Extract, Transform & Load (ETL)](#etl)
-
-
-
-### Transforming data
-
-[Cleaning data](#cleaning)
-
-* Missing values
-
-* Inconsistency
-
-* Finding duplicates
-
-Data validation
-
-### Data transformation
-
-Structure
-
-Manipulation: creating new variables
-
-
-### Storing data
-
-
-
-### Sharing data
-
-File formats
-
-Data documentation
-
-[Anonymity and Confidentiality]
-
-
-
-## Jumping from the tutorials into your own data
-
-https://twitter.com/beeonaposy/status/1281301404418703364?s=20
-
-
-
-
-
-
+***

@@ -24,4 +24,8 @@ https://github.com/dmi3kno/polite
 
 
 
+## {rvest} package
+
+[@doi:10.1080/10691898.2020.1787116]
+
 
