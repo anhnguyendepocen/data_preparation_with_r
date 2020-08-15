@@ -1,0 +1,12 @@
+# Data documentation {-documentation}
+
+The data tables we receive will, we hope, come with some additional information. Names you might hear used include
+
+* meta-data
+
+* data documentation
+
+* data dictionary
+
+https://medium.com/@leapingllamas/data-dictionary-a-how-to-and-best-practices-a09a685dcd61
+
