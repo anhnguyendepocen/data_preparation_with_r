@@ -8,6 +8,8 @@ The data tables we receive will, we hope, come with some additional information.
 
 * data dictionary
 
+Wilson, Bryan et al. [@Wilson_Bryan_good_enough_2017]
+
 Smithsonian: [Data Management Plans](https://library.si.edu/research/data-management-plans)
 
 * [Describing Your Data: Data Dictionaries](https://library.si.edu/sites/default/files/tutorial/pdf/datadictionaries20180226.pdf)
@@ -15,6 +17,8 @@ Smithsonian: [Data Management Plans](https://library.si.edu/research/data-manage
 * [Describing Your Project: Citation Metadata](https://library.si.edu/sites/default/files/tutorial/pdf/citationmetadata20180226.pdf)
 
 University of New Hampshire [Data Management Toolkit @ UNH](https://libraryguides.unh.edu/datamanagement/metadata)
+
+https://smithsonian.github.io/CCRCN-Public-Comment/data_management.html
 
 https://www.lib.uiowa.edu/data/manage/documenting/readme/
 
