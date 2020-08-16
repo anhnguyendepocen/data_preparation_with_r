@@ -8,5 +8,19 @@ The data tables we receive will, we hope, come with some additional information.
 
 * data dictionary
 
+Smithsonian: [Data Management Plans](https://library.si.edu/research/data-management-plans)
+
+* [Describing Your Data: Data Dictionaries](https://library.si.edu/sites/default/files/tutorial/pdf/datadictionaries20180226.pdf)
+
+* [Describing Your Project: Citation Metadata](https://library.si.edu/sites/default/files/tutorial/pdf/citationmetadata20180226.pdf)
+
+University of New Hampshire [Data Management Toolkit @ UNH](https://libraryguides.unh.edu/datamanagement/metadata)
+
+https://www.lib.uiowa.edu/data/manage/documenting/readme/
+
+https://library.usu.edu/data-management/data-management-plan
+
 https://medium.com/@leapingllamas/data-dictionary-a-how-to-and-best-practices-a09a685dcd61
+
+https://www.sas.com/en_us/whitepapers/data-management-for-analytics-best-practices-107769.html?utm_source=google&utm_medium=cpc&utm_campaign=dm-global&utm_content=GMS-44146&gclid=CjwKCAjwj975BRBUEiwA4whRB8uUDSFCbMOiy_lwXFBVH0gZxocQVi06iZftNfgzRj7QU4uaPeh7SxoCIfAQAvD_BwE
 
