@@ -28,3 +28,42 @@ https://medium.com/@leapingllamas/data-dictionary-a-how-to-and-best-practices-a0
 
 https://www.sas.com/en_us/whitepapers/data-management-for-analytics-best-practices-107769.html?utm_source=google&utm_medium=cpc&utm_campaign=dm-global&utm_content=GMS-44146&gclid=CjwKCAjwj975BRBUEiwA4whRB8uUDSFCbMOiy_lwXFBVH0gZxocQVi06iZftNfgzRj7QU4uaPeh7SxoCIfAQAvD_BwE
 
+https://osf.io/vd4y3/download
+
+https://rowman.com/isbn/9781442264380/data-management-a-practical-guide-for-librarians
+
+https://www.clir.org/pubs/reports/pub154/problem-of-data/
+
+https://guides.lib.umich.edu/c.php?g=538509&p=3686046
+
+https://www.axiomdatascience.com/best-practices/DataManagementBestPractices.html
+
+https://managing-qualitative-data.org/modules/2/a/
+
+***
+
+### In R
+
+https://research.tue.nl/files/145367570/Data_Dictionary_Group_Tutorial.pdf
+
+https://r4ds.had.co.nz/tidy-data.html#case-study
+
+http://optimumsportsperformance.com/blog/creating-a-data-dictionary-function-in-r/
+
+https://arxiv.org/pdf/2002.11626.pdf
+
+
+{dataMeta}
+
+https://bookdown.org/lyzhang10/lzhang_r_tips_book/how-to-make-a-simple-data-dictionary.html
+
+https://cran.r-project.org/web/packages/dataMeta/vignettes/dataMeta_Vignette.html
+
+
+{codebook}
+
+https://www.rdocumentation.org/packages/codebook/versions/0.9.2
+
+https://journals.sagepub.com/doi/full/10.1177/2515245919838783
+
+
