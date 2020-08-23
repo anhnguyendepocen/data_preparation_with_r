@@ -31,3 +31,9 @@ A good summary of the elements of data quality can be found on the "Data cleansi
 [@Buttrey_Whitaker_2017]
 
 
+
+## Spreadsheets
+
+All the ways that data can be stored in a spreadsheet
+
+[@Bryan_spreadsheets_2016]
