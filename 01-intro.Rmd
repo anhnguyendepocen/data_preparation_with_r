@@ -3,7 +3,9 @@
 
 ## The origin of data
 
-Data is proliferating, collected by scientists who are engaged in research (whether measuring sub-atomic particles or galaxies in the early universe, plant growth or the migration of animals), and also by the tools that are used to conduct the business of the world. Today, data about _you_ might be collected when you: 
+Data is proliferating, collected by scientists who are engaged in research (whether measuring sub-atomic particles or galaxies in the early universe, plant growth or the migration of animals, people's behaviour or where they live and work in cities), and also by the tools that are used to conduct the business of the world. 
+
+Today, data about _you_ might be collected when you: 
 
 * Buy a cup of coffee at a café. This generates at least three types of data: about the type of drink you ordered, about your coffee habits through the rewards program, and about the financial transaction—which is used by the store to measure sales and by you to manage your personal budget. 
 
@@ -29,7 +31,9 @@ The typical data science process has been described in this model [@Wickham_Grol
 The generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019]; in this book we will focus on the Import to Tidy to Transform steps.
 
 
+
 Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results; it is included in the base version of R [@R-base]. Other data sets might be excerpted to use as teaching examples [@R-gapminder], chosen for their statistical properties [@R-palmerpenguins], compiled as examples to demonstrate a methodology or technique [@R-modeldata], or to aggregate, validate, and clean still-larger data collections [@R-Lahman]. 
+
 
 But in real life the data we find ourselves working with is, more often than not, entirely different from those text book examples. 
 
@@ -51,6 +55,9 @@ This book will introduce steps to ensure that you can assemble your data in a wa
 Much of what is required in these steps can be programmed in the statistical programming language R, so that your efforts are reproducible. (For more about what is meant by "reproducibility", see [@Gandrud_2015] and [@Smith_reproducible_2017].) 
 
 There are many R packages that have been developed to explicitly tackle these challenges; this book isn't intended to catalogue them all, but to provide a current survey of ones commonly used. The sections that pertain to connecting to, querying, and manipulating databases will delve into the database query language SQL.
+
+
+Before we can start our data science workflow—before we get to the "Import" step—we need to collect the data. This book _won't_ cover the process of collecting data, a topic both broad and deep. Included in that would be determining the research question (or hypothesis) or business need that the data will support, designing the experiment or the business process to be captured (both could include a survey questionnaire), and undertaking the experiment (including fieldwork) or implementing the business data collection. The details of the data collection process are often domain-specific.
 
 
 

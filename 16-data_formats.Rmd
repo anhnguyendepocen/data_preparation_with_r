@@ -15,5 +15,5 @@ There is sometimes (often?) no right answer as to the best format for a particul
 We will not discuss the complexities of the different data storage formats, and the decision process that goes into deciding which format is appropriate. We'll just assume that the professionals who built the data storage system made well-informed decision, including balancing the various trade-offs between different formats.
 
 
-Reading: Chapter 7, "Data Storage" of [@Murrell_data_technologies] — [link](http://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node51.html)
+Reading: Chapter 5, "Data Storage" of [@Murrell_data_technologies] — [link](http://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node51.html)
 

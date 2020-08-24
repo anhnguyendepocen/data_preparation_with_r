@@ -1,0 +1,9 @@
+# Data layout
+
+Tidy data [@tidydata]
+
+Spreadsheets [@Broman_Woo_2017]
+
+Sharing data
+
+
