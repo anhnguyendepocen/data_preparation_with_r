@@ -1,0 +1,34 @@
+---
+title: "Untitled"
+author: "Martin Monkman"
+date: "24/08/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+For example, Dublin Core is probably one of the more common standards
+
+
+
+it may be easier to find a resource for a specific standard than metadata in general
+
+
+
+this looks like a good place to start https://rd-alliance.github.io/metadata-directory/standards/
+
+
+
+standards and formats sorted by which field they're used by and for what reason
+
+
+
+I haven't read through this but it also looks promising https://centerforgov.gitbooks.io/open-data-metadata-guide/content/dataset-metadata.html
+
+
+
+Ooo this looks like a fun checklist https://guides.ucf.edu/metadata/datasetmetadata_checklist
+
+
