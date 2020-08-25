@@ -75,6 +75,9 @@ A good summary of the elements of data quality can be found on the "Data cleansi
 * Uniformity
 
 
+Statistics Canada's _Quality Guidelines_ [@StatCan_data_quality_6] concerns the data _after_ it has been processed; that is, ready for use by analysts.
+
+
 See also [Data quality](https://oqrmmodel.wordpress.com/2013/03/10/what-is-quality-of-data/)
 
 

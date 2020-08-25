@@ -9,6 +9,10 @@ After having gone through a data validation process, you may have identified pro
 _(NOTE: repeated from [#validation])_
 
 
+_Bad Data Handbook_ [@McCallum_2012]
+
+
+
 ## Data quality
 
 A good summary of the elements of data quality can be found on the "Data cleansing" page of Wikipedia [@wiki:data_cleansing].
