@@ -57,7 +57,7 @@ This book is divided into major sections, each with chapters that delve into str
 
 
 
-### Transforming data
+### Cleaning and validation
 
 [Cleaning data](#cleaning)
 
@@ -76,11 +76,7 @@ Structure
 Manipulation: creating new variables
 
 
-### Storing data
-
-
-
-### Sharing data
+### Storing and sharing data
 
 File formats
 
