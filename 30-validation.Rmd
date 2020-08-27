@@ -87,3 +87,12 @@ See also [Data quality](https://oqrmmodel.wordpress.com/2013/03/10/what-is-quali
 [@Muller_Freytag_problems_2003]
 
 [@Wang_Strong_1996]
+
+
+## R packages
+
+[@R-dataQualityR]
+
+[@R-dlookr]
+
+[@R-daqapo]
