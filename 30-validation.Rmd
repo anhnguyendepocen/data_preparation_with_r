@@ -1,5 +1,23 @@
 # Data validation {#validation}
 
+It is a truth universally acknowledged that the data you have is not the data you need.
+
+Q. Ethan McCallum, writing in the first chapter of _Bad Data Handbook_, has this to say: 
+
+> It’s tough to nail down a precise definition of “Bad Data.” Some people consider it a
+purely hands-on, technical phenomenon: missing values, malformed records, and cranky
+file formats. Sure, that’s part of the picture, but Bad Data is so much more. It includes
+data that eats up your time, causes you to stay late at the office, drives you to tear out
+your hair in frustration. It’s data that you can’t access, data that you had and then lost,
+data that’s not the same today as it was yesterday…
+In short, Bad Data is data that gets in the way. There are so many ways to get there, from
+cranky storage, to poor representation, to misguided policy. If you stick with this data
+science bit long enough, you’ll certainly encounter your fair share.
+> [@McCallum_2012, p.1]
+
+
+
+
 
 
 ## Elements of dirty data
