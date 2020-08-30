@@ -18,7 +18,7 @@ description: "Before you can analyze your data, you need to ensure that it is cl
 
 # Preface  {-}
 
-<img src="20478450629_50e4c32d23_c.jpg" width="350" height="460" alt="Fisgard Lighthouse" />
+<img src="img\20478450629_50e4c32d23_c.jpg" width="350" height="460" alt="Fisgard Lighthouse" />
 
 _Draft_
 

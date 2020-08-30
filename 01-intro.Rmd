@@ -26,7 +26,7 @@ The process of going from raw data to decision support is often called data scie
 
 The typical data science process has been described in this model [@Wickham_Grolemund2016]:
 
-![The data science process](data-science.png)
+![The data science process](img\data-science.png)
 
 The generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019]; in this book we will focus on the Import to Tidy to Transform steps.
 
