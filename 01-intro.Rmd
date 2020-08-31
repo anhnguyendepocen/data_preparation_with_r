@@ -15,9 +15,12 @@ Today, data about _you_ might be collected when you:
 
 * Travel to your place of work or study, captured through the movement of your cell phone. Aggregated location and movement can be used for a variety of purposes, including by GPS systems to indicate areas of road congestion, or to let you know when the next bus will arrive at your stop.
 
+* Respond to a survey about your opinions about the platforms of various political parties and the people who represent those parties.
 
 
 ***
+
+## Analyzing data: the data science process
 
 A lot has been written about the benefits of organizations being "data-driven", when good data analysis leads to better decisions. There is no limit to the contexts where data analysis is being applied. In the private sector businesses can compete on analytics [@Davenport_Harris_2007], including retailers [@stitchfix_algo] and supply chain management [@Ashton_2018]. It can also be used in the public sector: data analysis can inform 
 public health strategies during a pandemic [@Polonsky_etal_2019].
@@ -31,6 +34,7 @@ The typical data science process has been described in this model [@Wickham_Grol
 The generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019]; in this book we will focus on the Import to Tidy to Transform steps.
 
 
+## Data in the wild
 
 Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results; it is included in the base version of R [@R-base]. Other data sets might be excerpted to use as teaching examples [@R-gapminder], chosen for their statistical properties [@R-palmerpenguins], compiled as examples to demonstrate a methodology or technique [@R-modeldata], or to aggregate, validate, and clean still-larger data collections [@R-Lahman]. 
 
@@ -57,7 +61,7 @@ Much of what is required in these steps can be programmed in the statistical pro
 There are many R packages that have been developed to explicitly tackle these challenges; this book isn't intended to catalogue them all, but to provide a current survey of ones commonly used. The sections that pertain to connecting to, querying, and manipulating databases will delve into the database query language SQL.
 
 
-Before we can start our data science workflow—before we get to the "Import" step—we need to collect the data. This book _won't_ cover the process of collecting data, a topic both broad and deep. Included in that would be determining the research question (or hypothesis) or business need that the data will support, designing the experiment or the business process to be captured (both could include a survey questionnaire), and undertaking the experiment (including fieldwork) or implementing the business data collection. The details of the data collection process are often domain-specific.
+Before we can start our data science workflow—before we get to the "Import" step—we need to collect the data. This book _won't_ cover the process of collecting data, a topic both broad and deep. Included in that would be determining the research question (or hypothesis) or business need that the data will support, designing the experiment or the business process to be captured (both could include a survey questionnaire), and undertaking the experiment (including fieldwork) or implementing the business data collection. The details of the data collection process are often domain-specific, so I encourage you to seek out reference materials that are tailored for the subject area you are working in.
 
 
 

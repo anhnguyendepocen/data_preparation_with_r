@@ -53,6 +53,10 @@ It's useful to be aware of various classification systems that already exist. Th
 
 Of course, these classification systems are subject-matter specific. 
 
+As one example, people's ages are often grouped into 5-year "bins", starting with ages 0–4, 5–9, 10–14, and so on. But not all age classification systems follow this. Depending on the data source, Statistics Canada provides ages grouped in a variety of ways. [@StatCan_age_of_person]
+
+And be aware that they can change over time; one example is that the geographical boundaries of cities and countries of the world have changed. City boundaries change, and often add smaller communities within the larger legal entity. Some regions have a rather turbulent history of changes in their boundaries, and some countries have been created only to disappear a few years later. 
+
 If you're working in the area of social and economic research, the national and international statistics agencies provide a robust and in-depth system, much of which is designed to allow for international comparisons.
 
 * International: OECD
