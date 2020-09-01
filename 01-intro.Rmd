@@ -34,26 +34,7 @@ The typical data science process has been described in this model [@Wickham_Grol
 The generalist data scientist has a hand in all the steps through this cycle [@Monkman_2019]; in this book we will focus on the Import to Tidy to Transform steps.
 
 
-## A record of your work
-
-Undertaking the steps of the data science process in a scripting environment means that your work will be reproducible and auditable, accurate, and has the potential to be collaborative. [@Parker_2017]
-
-This is a fundamental element of good scientific practice, and should be extended to include the analysis of the data. "The standard of reproducibility calls for the data and the computer code used to analyze the data be made available to others." [@Peng_reproducible_2011, p.1226] 
-
-And this necessity for reproducibility extends to business and government settings, as well. In settings where the data analysis is supporting decisions, it is imperative that the analyst (i.e. you) be able to explain their methods, and quickly and effectively respond to changes in the data (you might get an update).
-
-
-David Smith has summarized the benefits of a reproducible data science process. It: 
-
->* Saves time,
->* Produces better science,
->* Creates more trusted research,
->* Reduces the risk of errors, and
->* Encourages collaboration. [@Smith_reproducible_2017]
-
-
-Creating a reproducible workflow outside the scope of this book. For a deeper look at the topic, it has been summarized by Wilson et al. [@Wilson_Bryan_good_enough_2017], and specific methods for reproducibility in R and RStudio are dealt with in depth by Christopher Gandrud [@Gandrud_2015].
-
+ 
 
 ## Data in the wild
 
@@ -77,9 +58,28 @@ But in real life the data we find ourselves working with is, more often than not
 
 This book will introduce steps to ensure that you can assemble your data in a way that allows you to undertake the rest of the data science process, including making data and analysis available for a wider audience, such as other data analysts who might seek to use the data in further analysis. 
 
-Much of what is required in these steps can be programmed in the statistical programming language R, so that your efforts are reproducible. (For more about what is meant by "reproducibility", see [@Gandrud_2015] and [@Smith_reproducible_2017].) 
 
-There are many R packages that have been developed to explicitly tackle these challenges; this book isn't intended to catalogue them all, but to provide a current survey of ones commonly used. The sections that pertain to connecting to, querying, and manipulating databases will delve into the database query language SQL.
+### A record of your work
+
+Undertaking the steps of the data science process in a scripting environment such as R means that your work will be reproducible and auditable, accurate, and has the potential to be collaborative. [@Parker_2017]
+
+The idea of reproducibility is a fundamental element of good scientific practice, and should be extended to include the analysis of the data. "The standard of reproducibility calls for the data and the computer code used to analyze the data be made available to others." [@Peng_reproducible_2011, p.1226] 
+
+And while it's important in an academic environment, this necessity for reproducibility extends to business and government settings as well. In settings where the data analysis is supporting decisions, it is imperative that the analyst (i.e. you) be able to explain their methods, and quickly and effectively respond to changes in the data (you might get an update).
+
+
+David Smith has summarized the benefits of a reproducible data science process. It: 
+
+>* Saves time,
+>* Produces better science,
+>* Creates more trusted research,
+>* Reduces the risk of errors, and
+>* Encourages collaboration. [@Smith_reproducible_2017]
+
+
+All of the details involved with creating a reproducible workflow is outside the scope of this book;  a summary of approaches associated with documentation of data sourcing and preparation is included in the [**Data documentation** chapter](#documentation). 
+
+For a deeper look at reproducible workflow, it has been summarized by Wilson et al. [@Wilson_Bryan_good_enough_2017]. Specific methods for reproducibility in R and RStudio are dealt with in depth by Christopher Gandrud [@Gandrud_2015].  
 
 
 Before we can start our data science workflow—before we get to the "Import" step—we need to collect the data. This book _won't_ cover the process of collecting data, a topic both broad and deep. Included in that would be determining the research question (or hypothesis) or business need that the data will support, designing the experiment or the business process to be captured (both could include a survey questionnaire), and undertaking the experiment (including fieldwork) or implementing the business data collection. The details of the data collection process are often domain-specific, so I encourage you to seek out reference materials that are tailored for the subject area you are working in.

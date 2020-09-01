@@ -10,6 +10,8 @@ The web is an amazing repository of data. Some of the pages don't change very of
 
 
 
+See [@Gandrud_2015]
+
 
 ## Lesson: Introduction to webscraping
 
