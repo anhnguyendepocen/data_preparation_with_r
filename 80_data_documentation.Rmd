@@ -1,5 +1,24 @@
 # Data documentation {#documentation}
 
+
+## Workflow
+
+_How_ you work with data is as important as _what_ you do with the data.
+
+
+See [@Wilson_Bryan_good_enough_2017]
+
+
+See [@Zumel_2016]
+
+See [@Hellerstein_etal_2017], Chapter 2 "A Data Workflow Framework"
+
+
+There are many R packages that have been developed to explicitly tackle these challenges; this book isn't intended to catalogue them all, but to provide a current survey of ones commonly used. The sections that pertain to connecting to, querying, and manipulating databases will delve into the database query language SQL. 
+
+
+## Data documentation
+
 The data tables we receive will, we hope, come with some additional information. Names you might hear used include
 
 * meta-data
@@ -10,7 +29,10 @@ The data tables we receive will, we hope, come with some additional information.
 
 Wilson, Bryan et al. [@Wilson_Bryan_good_enough_2017]
 
-## Data dictionary
+
+
+
+### Data dictionary
 
 A data dictionary contains a listing of all of the variables in the data set, along with the values and how they are coded. A good dictionary will also include additional reference materials, such as citations of sources and standards that are applied.
 
