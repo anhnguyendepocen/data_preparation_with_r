@@ -54,9 +54,9 @@ Reading: Chapter 5, "Data Storage" of [@Murrell_data_technologies] — [link](ht
 
 
 
-## Plain-text tabular files
+## Delimited plain text files
 
-Plain-text (sometimes called "ASCII files", after . They are very commonly used for storing data files. They don't have any formatting—just the number or text.
+Plain-text (sometimes called "ASCII files", after the character encoding standard they use) files are often used to share data.  They are limited in what they can contain, which has both upsides and downsides. On the downside, they can't carry any additional information with them, such as variable types and labels. But on the upside, they don't carry any additional information that requires additional interpretation by the software. This means they can be read consistently by a wide variety of software.
 
 They come in two varieties, delimited and fixed-width. "Delimited" is a reference to the fact that the files have a character that marks the boundary between two variables. A very common format is the CSV file; the letters in the file name stand for "Comma Separated Values". Another type, although less common, uses the tab character to separate the variables, and will have the extension "TSV".
 
@@ -71,33 +71,30 @@ Base R has a number of functions to read CSV, TSV, and fixed-width files.
 
 ### {readr} (tidyverse)
 
-The {readr} [@R-readr] package is part of the tidyverse, and provides some streamlining of the functions noted above.
-
-The package {readr} is designed to make importing these files simple.
-
-
-(This example comes straight from https://readr.tidyverse.org/index.html)
+The {readr} [@R-readr] package is part of the tidyverse, and works very well to read plain-text files. (This example comes straight from the reference page for {readr} ^[{readr} reference page: https://readr.tidyverse.org/index.html])
 
 Run this chunk to create an object called `mtcars`, from a CSV file of the same name.
 
 ```{r}
-# example
-
+# assign path using the {here} package
 mtcars_path <- here::here("data", "mtcars.csv")
-
+# read the file and assign it to the object "mtcars"
 mtcars <- read_csv(mtcars_path)
 
 ```
 
-Adding the `cols()` allows us to alter what {readr} has decided for us. For example, we could set the `cyl` variable to be an integer.
+The function has the message shown above, letting us know the variable type that each is assigned.
+
+Adding the `col_types = cols()` parameter allows us to alter what {readr} has decided for us. For example, we could set the `cyl` variable to be an integer.
+
+When we show the entire table, we can see that the variable `cyl` is now an "<int>" type.
 
 ```{r}
-# example
-read_csv(mtcars_path, 
+mtcars <- read_csv(mtcars_path, 
          col_types = 
            cols(cyl = col_integer())
 )
-
+mtcars
 ```
 
 
@@ -124,14 +121,13 @@ Fixed-width files don't use a delimiter, and instead specify which column(s) eac
 
 ## Spreadsheets
 
-Spreadsheets and similar data tables are perhaps the most common way that data is made available. Because they originated as an electronic version of accounting worksheets, they have a tabular structure that works for other applications data storage, analysis, and sharing (i.e. publishing). Spreadsheet of one from or another is often standard when you buy a new computer, and if that's not to your taste, Google makes available a web-based spreadsheet tool, Google Sheets.
+Spreadsheets and similar data tables are perhaps the most common way that data is made available. Because they originated as an electronic version of accounting worksheets, they have a tabular structure that works for other applications data storage, analysis, and sharing (i.e. publishing). Spreadsheet of one from or another is often standard when you buy a new computer, and Microsoft Excel is the most common of all. And Google makes available a web-based spreadsheet tool, Google Sheets.
 
-But spreadsheets have a dark side (at least when it comes to data storage)—the values you see are not necessarily what's in the cell. For example, a cell might be the result of an arithmetic function that brings one or more values from elsewhere in the sheet (or in some cases, from another sheet). Some users will colour-code cells, but with no index to tell you what each colour means. [@Bryan_spreadsheets_2016] (For an alternative vision, see "Sanesheets" [@Bryan_sanesheets_2016].)
+Broman and Woo [@Broman_Woo_2017] provide a how-to for good data storage practice in a spreadsheet,but you are much more likely to find yourself working with a spreadsheet that doesn't achieve that standard. Spreadsheets have a dark side (at least when it comes to data storage)—the values you see are not necessarily what's in the cell. For example, a cell might be the result of an arithmetic function that brings one or more values from elsewhere in the sheet (or in some cases, from another sheet). Some users will colour-code cells, but with no index to tell you what each colour means. [@Bryan_spreadsheets_2016] (For an alternative vision, see "Sanesheets" [@Bryan_sanesheets_2016].)
 
 Paul Murrell titled his article "Data Intended for Human Consumption, Not Machine Consumption" [@Murrell_consumption] for a reason: all too often, a spreadsheet is used to make data easy for you and I to read, but this makes it harder for us to get it into a structure where our software program can do further analysis.
 
-While Broman and Woo [@Broman_Woo_2017] provide a how-to for good data storage practice in a spreadsheet, you are much more likely to find yourself working with a spreadsheet that doesn't achieve that standard. 
-
+The {readxl} package [@R-readxl] is designed to solve many of the challenges reading Excel files.
 
 
 ## Statistical software

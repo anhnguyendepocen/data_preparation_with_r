@@ -1,0 +1,65 @@
+---
+title: "_structure"
+author: "Martin Monkman"
+date: "05/09/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Structure of this book
+
+This book is divided into major sections, each with chapters that delve into strategies.
+
+### Data foundations
+
+[The relationship between the data and the analysis](#foundations)
+
+
+### Acquiring data
+
+[Importing data](#importing): dealing with different file formats
+
+[Webscraping](#webscraping): pulling data from websites
+
+
+### Relational databases
+
+[Connecting to databases](#databases): connecting and querying
+
+[Extract, Transform & Load (ETL)](#etl)
+
+
+
+### Cleaning and validation
+
+[Cleaning data](#cleaning)
+
+* Missing values
+
+* Inconsistency
+
+* Finding duplicates
+
+Data validation
+
+### Data transformation
+
+Structure
+
+Manipulation: creating new variables
+
+
+### Storing and sharing data
+
+File formats
+
+Data documentation
+
+[Anonymity and Confidentiality]
+
+
+
+

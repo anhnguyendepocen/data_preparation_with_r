@@ -33,60 +33,6 @@ It is assumed that the reader of this book will have a working knowledge of the 
 If you don't possess that knowledge yet, I would recommend that you work through _R for Data Science_ by Hadley Wickham and Garrett Grolemund [@Wickham_Grolemund2016]. This book, freely avaible at [r4ds.had.co.nz](https://r4ds.had.co.nz/), will give you a running start.
 
 
-## Structure of this book
-
-This book is divided into major sections, each with chapters that delve into strategies.
-
-### Data foundations
-
-[The relationship between the data and the analysis](#foundations)
-
-
-### Acquiring data
-
-[Importing data](#importing): dealing with different file formats
-
-[Webscraping](#webscraping): pulling data from websites
-
-
-### Relational databases
-
-[Connecting to databases](#databases): connecting and querying
-
-[Extract, Transform & Load (ETL)](#etl)
-
-
-
-### Cleaning and validation
-
-[Cleaning data](#cleaning)
-
-* Missing values
-
-* Inconsistency
-
-* Finding duplicates
-
-Data validation
-
-### Data transformation
-
-Structure
-
-Manipulation: creating new variables
-
-
-### Storing and sharing data
-
-File formats
-
-Data documentation
-
-[Anonymity and Confidentiality]
-
-
-
-
 
 
 
@@ -105,7 +51,7 @@ I would like to acknowledge everyone who has contributed to the books, articles,
 
 ### Source code
 
-The source code for this ebook can be found at this github repository: https://github.com/MonkmanMH/here_be_dragons 
+The source code for this ebook can be found at this github repository: https://github.com/MonkmanMH/data_preparation_with_r 
 
 This book is written in **Markdown**, using the {bookdown} package [@R-bookdown], and published to the web at [bookdown.org](https://bookdown.org/).
 
