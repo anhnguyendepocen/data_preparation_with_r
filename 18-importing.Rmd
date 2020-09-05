@@ -1,8 +1,13 @@
 # Importing data {#importing}
 
-Before we can start analyzing data—before we get to the "Import" step—we or someone else needs to collect it. 
+```{r setup, include=FALSE, message=FALSE}
 
-And "collecting data" can mean a lot of different things. It could refer to:
+library(tidyverse)
+library(haven)
+
+```
+
+The data has been collected. It might be the result of:
 
 * Running trials or experiments in a controlled laboratory setting.
 
@@ -11,6 +16,7 @@ And "collecting data" can mean a lot of different things. It could refer to:
 * Sampling the people in an area and asking them a series of questions.
 
 * Collecting information as part of a business operation. A familiar example are supermarket checkout scanners which data about grocery purchases, which facilitate operation management of the store by tracking sales and inventory, and generating orders.
+
 
 Once it has been collected in this way, you might have direct access to it. Or it may have a layer of processing between the raw source and the way it appears to your. After this processing, you might:
 
@@ -24,17 +30,95 @@ Once it has been collected in this way, you might have direct access to it. Or i
 
 And it's important to note that your analysis project might require more than one of these methods of data collection.
 
-How you collect the data you need will depend on many factors, including what is already available, what your budget is (some data collection methods will cost a lot more than others), and the legal and regulatory environment (for example, the definition of "personal information" varies from one jurisdiction to the next.
+How you assemble the data you need will depend on many factors, including what is already available, what your budget is (for example, some business-related data is collected by companies that then make it available at a cost), and the legal and regulatory environment (for example, the definition of "personal information" varies from one jurisdiction to the next).
 
 
-See [@Zumel_Mount_2019, chapter 2]
+## Data formats
+
+The data gets stored in a variety of electronic formats. The choice of format might be influenced by any one of the following:
+
+* the underlying needs of the data collectors (some file formats are tailored to a specific use);
+
+* the technology available to the collector;
+
+* the nature of the data being collected.
+
+There is sometimes (often?) no right answer as to the best format for a particular use case—there are pros and cons to each. (With that said, there is often a clear _less good_ choice for data storage and sharing...we're looking at you, PDF.) What this means is that in your workflow you will have to deal with data that needs to be extracted from a multitude of systems, and will be available to you in a multitude of formats.
+
+> It is essential that a statistician can talk to the database specialist, and, as a team member, the statistician, along with most others, will be expected to be able to use the database facilities for most purposes by themselves, and of course advise on aspects of the design. There is always much preliminary 'data cleaning' to do before an analysis can begin, almost regardless of how good a job is done by the database specialist. [@Venables_IDT_review_2010]
+
+There are plenty of resources detailing the complexities of the different data storage formats, and the decision process that goes into deciding which format is appropriate for a specific use-case. I always approach the task assuming that the professionals who built the data storage system made a well-informed decision, including balancing the various trade-offs between different formats, as well as budgetary and technology contraints that they might have faced.
 
 
-### Plain-text tabular files
+Reading: Chapter 5, "Data Storage" of [@Murrell_data_technologies] — [link](http://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node51.html)
+
+
+
+## Plain-text tabular files
+
+Plain-text (sometimes called "ASCII files", after . They are very commonly used for storing data files. They don't have any formatting—just the number or text.
+
+They come in two varieties, delimited and fixed-width. "Delimited" is a reference to the fact that the files have a character that marks the boundary between two variables. A very common format is the CSV file; the letters in the file name stand for "Comma Separated Values". Another type, although less common, uses the tab character to separate the variables, and will have the extension "TSV".
+
+
+### using base R
+
+Base R has a number of functions to read CSV, TSV, and fixed-width files.
 
 {base} [@R-base]
 
-{readr} [@R-readr]
+
+
+### {readr} (tidyverse)
+
+The {readr} [@R-readr] package is part of the tidyverse, and provides some streamlining of the functions noted above.
+
+The package {readr} is designed to make importing these files simple.
+
+
+(This example comes straight from https://readr.tidyverse.org/index.html)
+
+Run this chunk to create an object called `mtcars`, from a CSV file of the same name.
+
+```{r}
+# example
+
+mtcars_path <- here::here("data", "mtcars.csv")
+
+mtcars <- read_csv(mtcars_path)
+
+```
+
+Adding the `cols()` allows us to alter what {readr} has decided for us. For example, we could set the `cyl` variable to be an integer.
+
+```{r}
+# example
+read_csv(mtcars_path, 
+         col_types = 
+           cols(cyl = col_integer())
+)
+
+```
+
+
+
+The {readr} package allows a lot of control over how the file is read. Of particular utility are 
+
+* `na = ""` -- specify which values you want to be turned into `NA`
+
+* `skip = 0` -- specify how many rows to skip 
+
+* `n_max = Inf` -- the maximum number of records to read
+
+
+
+## Fixed-width files
+
+Fixed-width files don't use a delimiter, and instead specify which column(s) each variable occupies, consistently across the entire file.
+
+
+
+
 
 
 
@@ -47,5 +131,39 @@ But spreadsheets have a dark side (at least when it comes to data storage)—the
 Paul Murrell titled his article "Data Intended for Human Consumption, Not Machine Consumption" [@Murrell_consumption] for a reason: all too often, a spreadsheet is used to make data easy for you and I to read, but this makes it harder for us to get it into a structure where our software program can do further analysis.
 
 While Broman and Woo [@Broman_Woo_2017] provide a how-to for good data storage practice in a spreadsheet, you are much more likely to find yourself working with a spreadsheet that doesn't achieve that standard. 
+
+
+
+## Statistical software
+
+
+If you work with statisticians, economists, sociologists, survey practioners, and many others, you will find yourself encountering data files created using the software packages SAS, SPSS, and Stata. They have been around a long time (SAS and SPSS trace their history back to the late 1960s, and Stata was created in 1985) and have evolved, demonstrating their robustness, and have become common in many corporate and government settings. 
+
+A feature of these programs is that the variables and the associated values can be _labelled_. If you're familiar with **R**, value labelling is conceptually similar to the use of factor labels. These labels can carry a great deal of detail to which you might otherwise not have easy access.
+
+The **R** package {haven} [@R-haven] provides the functionality to read these three types of files; the reference page for {haven} is here: https://haven.tidyverse.org/index.html
+
+For most of these examples, we will work with SPSS formatted files; the approach is similar for the other two formats, and only differs in the details. For example, the `read_()` functions vary only with the extension. For example, a Stata data file has the extension ".dta", so the read function is `read_dta()`:
+
+
+```{r}
+
+haven::read_dta(here::here("data", "iris.dta"))
+
+```
+
+
+
+***
+
+## Additional resources
+
+Other examples of importing files can be found here:
+
+* Long and Teetor, _R Cookbook, 2nd ed._ [@Long_Teetor_2019, recipe 4.6] https://rc2e.com/inputandoutput#recipe-id136
+
+* Wickham and Grolemund, _R for Data Science_ [@Wickham_Grolemund2016, Chapter 11 Data Import] https://r4ds.had.co.nz/data-import.html
+
+* Zumel and Mount, _Practical Data Science with R_ [@Zumel_Mount_2019, chapter 2]
 
 
