@@ -82,4 +82,55 @@ If you're working in the area of social and economic research, the national and 
 
 * Statistics Canada [@StatCan_definitions]
 
-* 
+
+
+## Naming
+
+A part of classification systems is _how things are named_. While a classification system will provide some guidance or explicit direction on how the things being measured should be categorized and named, there are often cases where we the analysts are responsible for naming things. There is significant benefit to being thoughtful about this process, as it extends beyond the naming of variables and how values are encoded. It extends to the names of the files you create and the names of the folders you organize them in.
+
+> File organization and naming are powerful weapons against chaos.
+> —Jenny Bryan (quoted in [@Broman_tools4rr_2016])
+
+In Jenny Bryan's presentation "Naming Things" [@Bryan_namingthings_2015], she gives three principles for file names...although "file" is put in parenthesis, emphasizing that these principles apply to many other contexts as well:
+
+1. machine readable
+
+  * regular expression and globbing friendly
+  
+    - avoid spaces, punctuation, accented characters, and case sensitivity
+    
+  * easy to compute on
+  
+    - deliberate use of delimiters
+    
+2. human readable
+
+  * the name contains information about the _content_
+  
+  * "easy to figure out what the heck somethings is, based on its name"
+
+3. plays well with default ordering.
+
+  * put something numeric first
+  
+  * use the ISO 8601 standard for dates (see [@wiki:ISO_8601]); YYYY-MM-DD
+  
+  * in character strings, left pad other numbers with zeros
+  
+  
+Applying these methods, the files (or variable names, or values, or ...) will be:
+
+* easy to search later
+
+* easy to screen to a shorter list, based on the names
+
+* easy to extract information from the names, such as by splitting
+
+
+
+
+***
+
+
+
+ 

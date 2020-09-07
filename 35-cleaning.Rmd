@@ -2,8 +2,6 @@
 
 After having gone through a data validation process, you may have identified problems with your data. In this chapter, we will explore methods for cleaning the data.
 
-
-
 ## Elements of dirty data
 
 _(NOTE: repeated from [#validation])_
