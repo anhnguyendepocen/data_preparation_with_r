@@ -38,7 +38,7 @@ The generalist data scientist has a hand in all the steps through this cycle [@M
 
 ## Data in the wild
 
-Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results; it is included in the base version of R [@R-base]. Other data sets might be excerpted to use as teaching examples [@R-gapminder], chosen for their statistical properties [@R-palmerpenguins], compiled as examples to demonstrate a methodology or technique [@R-modeldata], or to aggregate, validate, and clean still-larger data collections [@R-Lahman]. 
+Most data science and statistics text books use example data sets that are nicely formatted and easy to import.  Anscombe's Quartet [@Anscombe_1973] is a famous example of a small data set that was designed to produce specific statistical results; it is included in the base version of R [@R-base]. Other data sets might be excerpted to use as teaching examples [@R-gapminder], chosen for their statistical properties [@R-palmerpenguins], compiled as examples to demonstrate a methodology or technique [@R-modeldata], or to clean, validate, and aggregate still-larger data collections [@R-Lahman]. 
 
 
 But in real life the data we find ourselves working with is, more often than not, entirely different from those text book examples. 
@@ -47,7 +47,7 @@ But in real life the data we find ourselves working with is, more often than not
 
 * The data might be stored in an untidy layout [@tidydata], or inconsistently structured.
 
-* We might receive data from multiple sources, so we end up with two files that have the same value but coded in different ways. For example, my home province in Canada can be represented as "British Columbia", "B.C.", or "BC". All three are accurate, but can cause problems if they are inconsistent across the data sources. And don't get me started on date formats—we'll save that for later.
+* We might receive data from multiple sources, so we end up with two files that have the same value but coded in different ways. For example, my home province in Canada can be represented as "British Columbia", "B.C.", or "BC". All three are accurate, but it can cause problems if they are inconsistent across the data sources (or even more problematically, in the same variable). And don't get me started on date formats—we'll save that for later.
 
 * Data might have as-of-yet undetected errors. It might be incomplete, inconsistent, or it might have data entry mistakes and typos.
 
