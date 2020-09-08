@@ -1,5 +1,7 @@
 # Foundations {#foundations}
 
+As we get started on the path of preparing our data, we should think first about where we want to go.
+
 
 ## The goal
 
@@ -64,7 +66,7 @@ And our _variable_ results from this calculation: in the code example we called 
 
 ## Classification systems
 
-It's useful to be aware of various classification systems that already exist. That way, you can 
+It's useful to be aware of various classification systems that already exist. That way, you can: 
 
 * save yourself the challenge of coming up with your own classifications for your variables, and
 
@@ -76,9 +78,9 @@ As one example, in much social and business data, people's ages are often groupe
 
 And be aware that the elements with a classification system can change over time. One familiar example is that the geographical boundaries of cities and countries of the world have changed. City boundaries change, often with the larger city expanding to add smaller communities within the larger legal entity. (The current City of Toronto is an amalgamation of six smaller municipalities.) Some regions have a rather turbulent history of changes in their boundaries, and some countries have been created only to disappear a few years later. 
 
-If you're working in the area of social and economic research, the national and international statistics agencies provide robust and in-depth classification systems, much of which is designed to allow for international comparisons.
+If you're working in the area of social and economic research, the national and international statistics agencies provide robust and in-depth classification systems, much of which is designed to allow for international comparisons. Here are some examples:
 
-* International: OECD
+* International: United Nations Statistics Division [@UNSD_classifications]
 
 * Statistics Canada [@StatCan_definitions]
 
@@ -86,7 +88,7 @@ If you're working in the area of social and economic research, the national and 
 
 ## Naming
 
-A part of classification systems is _how things are named_. While a classification system will provide some guidance or explicit direction on how the things being measured should be categorized and named, there are often cases where we the analysts are responsible for naming things. There is significant benefit to being thoughtful about this process, as it extends beyond the naming of variables and how values are encoded. It extends to the names of the files you create and the names of the folders you organize them in.
+A part of classification systems is _how things are named_. While a classification system will provide guidance or explicit direction on how the things being measured should be categorized and named, there are often cases where we the analysts are responsible for naming things. There is significant benefit to being thoughtful about this, as it goes beyond the naming of variables and how values are encoded, including extending to the names of the files you create and the names of the folders you organize them in.
 
 > File organization and naming are powerful weapons against chaos.
 > —Jenny Bryan (quoted in [@Broman_tools4rr_2016])
@@ -126,6 +128,8 @@ Applying these methods, the files (or variable names, or values, or ...) will be
 
 * easy to extract information from the names, such as by splitting
 
+
+An example of this approach to naming things is presented in Emily Riederer's article "Column Names as Contracts" [@Riederer_names_2020].
 
 
 
