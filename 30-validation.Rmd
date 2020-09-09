@@ -78,6 +78,11 @@ Methodology book: [@ESS_datavalidation_2018]
 Validation: [@Kennedy_1997], [@Chan_2011]
 
 
+### Validation with R
+
+[@R-validate]
+
+
 ## Data quality
 
 A good summary of the elements of data quality can be found on the "Data cleansing" page of Wikipedia [@wiki:data_cleansing].
