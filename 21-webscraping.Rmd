@@ -18,6 +18,24 @@ See [@Gandrud_2015]
 Library Carpentry, https://librarycarpentry.org/lc-webscraping/
 
 
+## Lesson: 
+
+Grant R. McDermott, _Big Data in Economics_ [@McDermott_BDE_2020]
+
+* [Webscraping: (1) Server-side and CSS](https://raw.githack.com/uo-ec510-2020-spring/lectures/master/07-web-css/07-web-css.html)
+
+* [Webscraping: (2) Client-side and APIs](https://raw.githack.com/uo-ec510-2020-spring/lectures/master/08-web-api/08-web-api.html)
+
+
+## Other lessons
+
+[Examples of Web Scraping With R](https://www.programmingr.com/examples/examples-web-scraping-r/)
+
+[Web Scraping with R](https://www.scrapingbee.com/blog/web-scraping-r/) - ?
+
+
+[Beginner’s Guide on Web Scraping in R (using rvest) with hands-on example](https://www.analyticsvidhya.com/blog/2017/03/beginners-guide-on-web-scraping-in-r-using-rvest-with-hands-on-knowledge/)
+
 ## {polite} package
 
 https://dmi3kno.github.io/polite/index.html
@@ -32,5 +50,7 @@ https://dmi3kno.github.io/polite/index.html
 
 
 [@doi:10.1080/10691898.2020.1787116]
+
+
 
 
