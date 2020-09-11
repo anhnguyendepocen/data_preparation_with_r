@@ -1,4 +1,6 @@
-# Data validation {#validation}
+# (PART) Cleaning and Validation {-} 
+
+# Introduction {#cleaning_intro}
 
 It is a truth universally acknowledged that the data you have is not the data you need.
 
@@ -16,8 +18,9 @@ science bit long enough, you’ll certainly encounter your fair share.
 > [@McCallum_2012, p.1]
 
 
-So what do we do with "bad data"? There is copious literature, particularly in the area of database development and administration, about data validation (more about that shortly). And there is plenty 
+So what do we do with "bad data"? There is copious literature, particularly in the area of database development and administration, about data validation (more about that shortly). 
 
+Often we hear about "data cleaning". But as Katie Rawson and Trevor Muñoz have put it, "The phrase “data cleaning” is a stand-in for longer and more precise descriptions of what people are doing in the initial phases of data-intensive research." [@Rawson_Munoz_2019]
 
 
 ## Elements of dirty data
@@ -45,77 +48,3 @@ What are common dirty data problems?
 
 See [@Zumel_Mount_2019, chapters 3 and 4]
 
-
-## Validation
-
-Detection and localization of errors like:
-
-* Missing values and imputation
-
-* Special values
-
-* Outliers
-
-* Duplicates
-
-
-https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4
-
-
-Statistics Canada: [Statistics Canada Quality Guidelines](https://www150.statcan.gc.ca/n1/en/catalogue/12-539-X)
-
-
-
-EuroStat: [Data Validation - Overview](https://ec.europa.eu/eurostat/cros/content/data-validation-overview_en)
-
-* [definitions](https://ec.europa.eu/eurostat/cros/content/definitions_en)
-
-* [landing page?](https://ec.europa.eu/eurostat/data/data-validation)
-
-Methodology book: [@ESS_datavalidation_2018]
-
-
-Validation: [@Kennedy_1997], [@Chan_2011]
-
-
-### Validation with R
-
-[@R-validate]
-
-
-## Data quality
-
-A good summary of the elements of data quality can be found on the "Data cleansing" page of Wikipedia [@wiki:data_cleansing].
-
-* Validity
-
-* Accuracy
-
-* Completeness
-
-* Consistency
-
-* Uniformity
-
-
-Statistics Canada's _Quality Guidelines_ [@StatCan_data_quality_6] concerns the data _after_ it has been processed; that is, ready for use by analysts.
-
-
-See also [Data quality](https://oqrmmodel.wordpress.com/2013/03/10/what-is-quality-of-data/)
-
-
-
-### Hierarchy of data quality
-
-[@Muller_Freytag_problems_2003]
-
-[@Wang_Strong_1996]
-
-
-## R packages
-
-[@R-dataQualityR]
-
-[@R-dlookr]
-
-[@R-daqapo]

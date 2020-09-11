@@ -1,8 +1,7 @@
----
-output:
-  html_document: default
----
-# Anonymity and Confidentiality
+# (PART) Other considerations {-} 
+
+
+# Anonymity and Confidentiality {#anonymity}
 **_Or,_ Statistical Disclosure Control, Masking, and De-Identification**
 
 
