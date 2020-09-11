@@ -1,0 +1,121 @@
+# Data validation {#validation}
+
+It is a truth universally acknowledged that the data you have is not the data you need.
+
+Q. Ethan McCallum, writing in the first chapter of _Bad Data Handbook_, has this to say: 
+
+> It’s tough to nail down a precise definition of “Bad Data.” Some people consider it a
+purely hands-on, technical phenomenon: missing values, malformed records, and cranky
+file formats. Sure, that’s part of the picture, but Bad Data is so much more. It includes
+data that eats up your time, causes you to stay late at the office, drives you to tear out
+your hair in frustration. It’s data that you can’t access, data that you had and then lost,
+data that’s not the same today as it was yesterday…
+In short, Bad Data is data that gets in the way. There are so many ways to get there, from
+cranky storage, to poor representation, to misguided policy. If you stick with this data
+science bit long enough, you’ll certainly encounter your fair share.
+> [@McCallum_2012, p.1]
+
+
+So what do we do with "bad data"? There is copious literature, particularly in the area of database development and administration, about data validation (more about that shortly). And there is plenty 
+
+
+
+## Elements of dirty data
+
+What are common dirty data problems?
+
+* Column headers are values, not variable names
+
+* Changing type of data (some records are numbers and some are character strings)
+
+* Multiple variables are stored in one column 
+
+* Misspellings (typing errors)
+
+* Value in wrong field (e.g. country entered into `city` field)
+
+* Irregularities in unit of measurement (`salary` field in international survey, filled in as Canadian, U.S., and Australian dollars)
+
+* Contradiction (for example, two databases with the same person but the date of birth differs, perhaps due to non-ISO8601 entry: 07-08-79 and 08-07-79 both have the same digits but one could be mm-dd-yy and the other dd-mm-yy...we just don't know which is the correct one. Or is one a typo?)
+
+* Default values in the place of missing values.
+
+> Dr Davis Lawrence, director of safety-literature database the SafeLit Foundation...tells me that 'in most US states the quality of police crash reports is at best poor for use as a research tool. ... Data-quality checks were rare and when quality was evaluated it was found wanting. For example, in Louisiana for most crashes in the 1980s most of the occupants were males who were born on January 1st, 1950. Almost all of the vehicles involved in crashes were the 1960 model year.' Except they weren't. These were just the default settings. [@Criado_Perez_2019, p.190]
+
+
+See [@Zumel_Mount_2019, chapters 3 and 4]
+
+
+## Validation
+
+Detection and localization of errors like:
+
+* Missing values and imputation
+
+* Special values
+
+* Outliers
+
+* Duplicates
+
+
+https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4
+
+
+Statistics Canada: [Statistics Canada Quality Guidelines](https://www150.statcan.gc.ca/n1/en/catalogue/12-539-X)
+
+
+
+EuroStat: [Data Validation - Overview](https://ec.europa.eu/eurostat/cros/content/data-validation-overview_en)
+
+* [definitions](https://ec.europa.eu/eurostat/cros/content/definitions_en)
+
+* [landing page?](https://ec.europa.eu/eurostat/data/data-validation)
+
+Methodology book: [@ESS_datavalidation_2018]
+
+
+Validation: [@Kennedy_1997], [@Chan_2011]
+
+
+### Validation with R
+
+[@R-validate]
+
+
+## Data quality
+
+A good summary of the elements of data quality can be found on the "Data cleansing" page of Wikipedia [@wiki:data_cleansing].
+
+* Validity
+
+* Accuracy
+
+* Completeness
+
+* Consistency
+
+* Uniformity
+
+
+Statistics Canada's _Quality Guidelines_ [@StatCan_data_quality_6] concerns the data _after_ it has been processed; that is, ready for use by analysts.
+
+
+See also [Data quality](https://oqrmmodel.wordpress.com/2013/03/10/what-is-quality-of-data/)
+
+
+
+### Hierarchy of data quality
+
+[@Muller_Freytag_problems_2003]
+
+[@Wang_Strong_1996]
+
+
+## R packages
+
+[@R-dataQualityR]
+
+[@R-dlookr]
+
+[@R-daqapo]

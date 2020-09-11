@@ -24,7 +24,7 @@ _Draft_
 
 It is routinely noted that the [Pareto principle](https://en.wikipedia.org/wiki/Pareto_principle) applies to data science—80% of one's time is spent on data collection and preparation, and the remaining 20% on the "fun stuff" like modeling, data visualization, and communication.
 
-There is no shortage of material—text books, journal articles, blog posts, online courses, podcasts, etc.— about the 20%. This modest book hopes to serve as an introduction and wayfinder for readers seeking to understand core elements of the other 80%.
+There is no shortage of material—text books, journal articles, blog posts, online courses, podcasts, etc.— about the 20%. This modest book hopes to serve as an introduction and wayfinder through some of the scattered resources for readers seeking to understand the core elements of the other 80%.
 
 ## You, the reader
 

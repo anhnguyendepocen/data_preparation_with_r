@@ -16,7 +16,7 @@ science bit long enough, you’ll certainly encounter your fair share.
 > [@McCallum_2012, p.1]
 
 
-
+So what do we do with "bad data"? There is copious literature, particularly in the area of database development and administration, about data validation (more about that shortly). And there is plenty 
 
 
 
