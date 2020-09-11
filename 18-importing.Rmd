@@ -78,6 +78,9 @@ In the second case, and as the first cases progresses, you actually know a lot a
 > A plain text file that is readable by a human being in a text editor should be your default until you have **actual proof** that this will not work. Reading and writing to exotic or proprietary formats will be the first thing to break in the future or on a different computer. It also creates barriers for anyone who has a different toolkit than you do. Be software-agnostic. Aim for future-proof and moron-proof.
 
 
+general R advice on import/export:  https://cran.r-project.org/doc/manuals/r-devel/R-data.html
+
+
 ## Delimited plain text files
 
 Plain-text (sometimes called "ASCII files", after the character encoding standard they use) files are often used to share data.  They are limited in what they can contain, which has both upsides and downsides. On the downside, they can't carry any additional information with them, such as variable types and labels. But on the upside, they don't carry any additional information that requires additional interpretation by the software. This means they can be read consistently by a wide variety of software.
