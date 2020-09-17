@@ -48,3 +48,11 @@ What are common dirty data problems?
 
 See [@Zumel_Mount_2019, chapters 3 and 4]
 
+
+## Elements of data quality
+
+[@ONS_guidelines_statistical_quality]
+
+[@StatCan_data_assurance_framework] -- also other (more recent StatCan pubs)
+
+Hierarchy of data quality: [@Wang_Reddy_Kon_1995]
