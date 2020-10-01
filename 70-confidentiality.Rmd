@@ -271,6 +271,19 @@ CRAN page: [easySdcTable: Easy Interface to the Statistical Disclosure Control P
 vignette: [`easySdcTable` Vignette](https://cran.r-project.org/package=easySdcTable/vignettes/easySdcTableVignette.html)
 
 
+### `{anonymizer}`
+
+**package**
+
+GitHub page: [Anonymizes data containing Personally Identifiable Information (PII) using a combination of salting and hashing.](https://github.com/wilkox/deidentifyr) [@R-anonymizer]
+
+
+### `{deidentifyr}`
+
+**package**
+
+GitHub page: [An R package for deidentifying datasets that may contain personally identifiable information (PII)](https://github.com/wilkox/deidentifyr) [@R-deidentifyr]
+
 
 ### `{digest}`
 
